@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://d1dvbi3rfax1r"]
+
+[ext_resource type="Script" uid="uid://dfexnd3n5lmid" path="res://tree3.gd" id="1_brfkd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uc1xx"]
+
+[node name="Tree" type="StaticBody2D" unique_id=2068818131]
+script = ExtResource("1_brfkd")
+
+[node name="Polygon2D" type="Polygon2D" parent="." unique_id=443498724]
+color = Color(0.16981262, 0.5120458, 6.6420434e-06, 1)
+polygon = PackedVector2Array(-40, -120, 40, -120, 40, 0, -40, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1338393237]
+position = Vector2(-30, -10)
+shape = SubResource("RectangleShape2D_uc1xx")

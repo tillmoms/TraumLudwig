@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://chnkbtf4iv4ty"]
+
+[ext_resource type="Script" uid="uid://dk3qxx6fx52ho" path="res://player.gd" id="1_xhfnw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0rwas"]
+size = Vector2(80, 60)
+
+[node name="Player" type="CharacterBody2D" unique_id=1551188272 groups=["player"]]
+script = ExtResource("1_xhfnw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2032969758]
+shape = SubResource("RectangleShape2D_0rwas")
+
+[node name="Schlitten" type="Polygon2D" parent="." unique_id=118386652]
+color = Color(0.31938535, 0.20418948, 0.11534222, 1)
+polygon = PackedVector2Array(-40, -20, -0.046150208, -30, 40, -20, 40.000008, 7.418564, 40, 20, -0.046157837, 30, -40, 20)
+
+[node name="Ludwig" type="Polygon2D" parent="." unique_id=1438183573]
+color = Color(0.002108223, 0.204131, 0.79002804, 1)
+polygon = PackedVector2Array(-30, -20, 30, -20, 30, 20, -30, 20)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1459231695]
+offset = Vector2(0, -400)
