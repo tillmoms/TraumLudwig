@@ -3,15 +3,18 @@
 [ext_resource type="Script" uid="uid://g7wh8r5kll8v" path="res://obstacle_spawner1.gd" id="1_jahun"]
 [ext_resource type="PackedScene" uid="uid://chnkbtf4iv4ty" path="res://Player.tscn" id="1_wjlmy"]
 [ext_resource type="PackedScene" uid="uid://d1dvbi3rfax1r" path="res://tree.tscn" id="2_62hqa"]
+[ext_resource type="Texture2D" uid="uid://cos1mpkjtru7i" path="res://2DSprites/Abschnitt1/Boden.png" id="4_yvn8m"]
 
 [node name="Node2D" type="Node2D" unique_id=705122885]
 
-[node name="BG" type="ColorRect" parent="." unique_id=907979180]
-offset_left = -959.0
-offset_top = -9945.0
-offset_right = 961.0
-offset_bottom = 55.0
-color = Color(0.7607843, 1, 1, 1)
+[node name="BG" type="TextureRect" parent="." unique_id=1818084334]
+offset_left = 1501.0
+offset_top = -19831.0
+offset_right = 21501.0
+offset_bottom = -16831.0
+rotation = 1.5707964
+texture = ExtResource("4_yvn8m")
+stretch_mode = 1
 
 [node name="Obstacle Spawner" type="Node2D" parent="." unique_id=5769977]
 script = ExtResource("1_jahun")
