@@ -5,26 +5,38 @@ extends Node2D
 
 
 var wall_timer = 0.0
-const WALL_INTERVAL = 0.4
+const WALL_INTERVAL = 0.2
 const LEFT_WALL_X = -760.0
 const RIGHT_WALL_X = 760.0
 
 var obstacle_timer = 0.0
-const OBSTACLE_INTERVAL = 1.5
+const OBSTACLE_INTERVAL = 1.0
 
 func _process(delta):
 	var player = get_tree().get_first_node_in_group("player")
 	if player == null:
 		return
 	
-	var spawn_y = player.global_position.y - 700
+	var spawn_y = player.global_position.y - 1200
 	
 	# WandBäume
 	wall_timer += delta
+	
 	if wall_timer >= WALL_INTERVAL:
 		wall_timer = 0.0
-		spawn_tree(Vector2(LEFT_WALL_X, spawn_y), 1.0, true, -1)
-		spawn_tree(Vector2(RIGHT_WALL_X, spawn_y), 1.0, true, 1)
+	# Innere Wand
+		spawn_tree(Vector2(LEFT_WALL_X, spawn_y + randf_range(-20.0, 20.0)), 1.0, true, -1)
+		spawn_tree(Vector2(RIGHT_WALL_X, spawn_y + randf_range(-20.0, 20.0)), 1.0, true, 1)
+	# Mittlere Wand
+		spawn_tree(Vector2(-900.0, spawn_y + randf_range(-80.0, 80.0)), 1.0, true, -2)
+		spawn_tree(Vector2(900.0, spawn_y + randf_range(-80.0, 80.0)), 1.0, true, 2)
+	# Äußere Wand
+		spawn_tree(Vector2(-1100.0, spawn_y + randf_range(-100.0, 100.0)), 1.0, true, -3)
+		spawn_tree(Vector2(1100.0, spawn_y + randf_range(-100.0, 100.0)), 1.0, true, 3)
+	# Weiteste Wand
+		spawn_tree(Vector2(-1300.0, spawn_y + randf_range(-120.0, 120.0)), 1.0, true, -4)
+		spawn_tree(Vector2(1300.0, spawn_y + randf_range(-120.0, 120.0)), 1.0, true, 4)
+
 	
 	# HindernisBäume
 	obstacle_timer += delta
