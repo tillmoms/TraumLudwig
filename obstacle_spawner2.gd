@@ -4,8 +4,8 @@ extends Node2D
 
 
 
-var wall_timer = 0.4
-const WALL_INTERVAL = 0.3
+var wall_timer = 0.0
+const WALL_INTERVAL = 0.2
 const LEFT_WALL_X = -900.0
 const RIGHT_WALL_X = 900.0
 
@@ -37,13 +37,17 @@ func _process(delta):
 		spawn_tree(Vector2(-1300.0, spawn_y + randf_range(-120.0, 120.0)), 1.0, true, -4)
 		spawn_tree(Vector2(1300.0, spawn_y + randf_range(-120.0, 120.0)), 1.0, true, 4)
 
- 
+		spawn_tree(Vector2(-1500.0, spawn_y + randf_range(-160.0, 160.0)), 1.0, true, -6)
+		spawn_tree(Vector2(1500.0, spawn_y + randf_range(-160.0, 160.0)), 1.0, true, 6)
 		
-
+		spawn_tree(Vector2(-1700.0, spawn_y + randf_range(-160.0, 160.0)), 1.0, true, -6)
+		spawn_tree(Vector2(1700.0, spawn_y + randf_range(-160.0, 160.0)), 1.0, true, 6)
 		
-
+		spawn_tree(Vector2(-1900.0, spawn_y + randf_range(-160.0, 160.0)), 1.0, true, -6)
+		spawn_tree(Vector2(1900.0, spawn_y + randf_range(-160.0, 160.0)), 1.0, true, 6)
 		
-
+		spawn_tree(Vector2(-2500.0, spawn_y + randf_range(-320.0, 320.0)), 1.0, true, -9)
+		spawn_tree(Vector2(2500.0, spawn_y + randf_range(-320.0, 320.0)), 1.0, true, 91)
 	
 	# HindernisBäume
 	#obstacle_timer += delta
@@ -54,9 +58,10 @@ func _process(delta):
 
 func spawn_tree(pos: Vector2, scale_factor: float, wall: bool = false, side: int = 1):
 	var tree = tree_scene.instantiate()
-	get_parent().add_child(tree)
-	tree.global_position = pos
+	# Position, Scale und Properties VOR add_child setzen,
+	# damit der Baum nicht für einen Frame an (0,0) mit scale (1,1) flackert
+	tree.position = pos
 	tree.scale = Vector2(scale_factor, scale_factor)
 	tree.is_wall_tree = wall
 	tree.side = side
-	tree.call_deferred("init_tree")
+	get_parent().add_child(tree)

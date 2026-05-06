@@ -1,16 +1,21 @@
 [gd_scene format=3 uid="uid://d1dvbi3rfax1r"]
 
 [ext_resource type="Script" uid="uid://dfexnd3n5lmid" path="res://tree3.gd" id="1_brfkd"]
+[ext_resource type="Texture2D" uid="uid://bckyqjoj6a6h6" path="res://2DSprites/Abschnitt1/Baumiiii2.png" id="2_nnvrw"]
+[ext_resource type="Texture2D" uid="uid://51eirlyijp6m" path="res://2DSprites/Abschnitt1/Baumiiii4.png" id="3_d2g23"]
+[ext_resource type="Texture2D" uid="uid://3ppwl0gurbmn" path="res://2DSprites/Abschnitt1/Baumiiii3.png" id="4_44ud8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uc1xx"]
+size = Vector2(83, 190)
 
 [node name="Tree" type="StaticBody2D" unique_id=2068818131]
 script = ExtResource("1_brfkd")
+tree_textures = Array[Texture2D]([ExtResource("4_44ud8"), ExtResource("3_d2g23"), ExtResource("2_nnvrw")])
 
-[node name="Polygon2D" type="Polygon2D" parent="." unique_id=443498724]
-color = Color(0.16981262, 0.5120458, 6.6420434e-06, 1)
-polygon = PackedVector2Array(-40, -120, 40, -120, 40, 0, -40, 0)
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1730095355]
+z_index = 2
+texture = ExtResource("2_nnvrw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1338393237]
-position = Vector2(-30, -10)
+position = Vector2(-13, 139)
 shape = SubResource("RectangleShape2D_uc1xx")

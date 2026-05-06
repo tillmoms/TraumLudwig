@@ -3,18 +3,19 @@
 [ext_resource type="Script" uid="uid://g7wh8r5kll8v" path="res://obstacle_spawner1.gd" id="1_jahun"]
 [ext_resource type="PackedScene" uid="uid://chnkbtf4iv4ty" path="res://Player.tscn" id="1_wjlmy"]
 [ext_resource type="Texture2D" uid="uid://dgcik45t78ybo" path="res://2DSprites/Abschnitt1/Boden2.png" id="1_yvn8m"]
-[ext_resource type="PackedScene" uid="uid://d1dvbi3rfax1r" path="res://tree.tscn" id="2_62hqa"]
-
-[sub_resource type="Gradient" id="Gradient_yvn8m"]
-colors = PackedColorArray(0.101960786, 0.22745098, 0.36078432, 1, 0.65882355, 0.84705883, 0.91764706, 1)
-
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_4d5ai"]
-gradient = SubResource("Gradient_yvn8m")
-fill_to = Vector2(0, 0.6367521)
+[ext_resource type="PackedScene" uid="uid://d1dvbi3rfax1r" path="res://tree.tscn" id="3_yvn8m"]
 
 [node name="Node2D" type="Node2D" unique_id=705122885]
+metadata/_edit_horizontal_guides_ = [199.0]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1863429625]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=1067483851]
+offset_right = 1921.0
+offset_bottom = 198.0
 
 [node name="BG" type="TextureRect" parent="." unique_id=1818084334]
+z_index = -10
 offset_left = -1487.0
 offset_top = -9859.0
 offset_right = 1513.0
@@ -22,16 +23,9 @@ offset_bottom = 141.0
 texture = ExtResource("1_yvn8m")
 stretch_mode = 1
 
-[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=466370314]
-
-[node name="Himmel" type="TextureRect" parent="CanvasLayer" unique_id=18070756]
-offset_right = 1920.0
-offset_bottom = 200.0
-texture = SubResource("GradientTexture2D_4d5ai")
-
 [node name="Obstacle Spawner" type="Node2D" parent="." unique_id=5769977]
 script = ExtResource("1_jahun")
-tree_scene = ExtResource("2_62hqa")
+tree_scene = ExtResource("3_yvn8m")
 
 [node name="Player" parent="." unique_id=1551188272 instance=ExtResource("1_wjlmy")]
 scale = Vector2(0.1, 0.1)
