@@ -10,7 +10,7 @@ const LEFT_WALL_X = -900.0
 const RIGHT_WALL_X = 900.0
 
 var obstacle_timer = 0.0
-const OBSTACLE_INTERVAL = 1.0
+const OBSTACLE_INTERVAL = 0.7
 
 func _process(delta):
 	var player = get_tree().get_first_node_in_group("player")
@@ -49,7 +49,7 @@ func _process(delta):
 	obstacle_timer += delta
 	if obstacle_timer >= OBSTACLE_INTERVAL:
 		obstacle_timer = 0.0
-		var random_x = randf_range(-560.0, 560.0)
+		var random_x = randf_range(-530.0, 530.0)
 		spawn_obstacle(Vector2(random_x, spawn_y))
 
 func spawn_tree(pos: Vector2, scale_factor: float, wall: bool = false, side: int = 1):

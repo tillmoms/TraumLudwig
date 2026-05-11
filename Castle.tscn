@@ -1,0 +1,138 @@
+[gd_scene format=3 uid="uid://bpufxgp68mlr8"]
+
+[ext_resource type="Script" uid="uid://44mpvlc4jctw" path="res://castle.gd" id="1_8beew"]
+[ext_resource type="Texture2D" uid="uid://o27sf1m12on3" path="res://Animation/A1 Animation/Schloss/Schloss_00000.png" id="1_j50sy"]
+[ext_resource type="Texture2D" uid="uid://dghx3jmjnqey5" path="res://Animation/A1 Animation/Schloss/Schloss_00001.png" id="2_8beew"]
+[ext_resource type="Texture2D" uid="uid://bekyy3teh1du1" path="res://Animation/A1 Animation/Schloss/Schloss_00002.png" id="3_dakjw"]
+[ext_resource type="Texture2D" uid="uid://0gu74ihoylud" path="res://Animation/A1 Animation/Schloss/Schloss_00003.png" id="4_i580k"]
+[ext_resource type="Texture2D" uid="uid://bk4r151hgm2vi" path="res://Animation/A1 Animation/Schloss/Schloss_00004.png" id="5_r5waw"]
+[ext_resource type="Texture2D" uid="uid://dhesp3jlspa00" path="res://Animation/A1 Animation/Schloss/Schloss_00005.png" id="6_b2t2p"]
+[ext_resource type="Texture2D" uid="uid://dl13eq6n1wvef" path="res://Animation/A1 Animation/Schloss/Schloss_00006.png" id="7_w0ytx"]
+[ext_resource type="Texture2D" uid="uid://dmb0uqsj7ppcj" path="res://Animation/A1 Animation/Schloss/Schloss_00007.png" id="8_6ify7"]
+[ext_resource type="Texture2D" uid="uid://degq5ofbsu8mj" path="res://Animation/A1 Animation/Schloss/Schloss_00008.png" id="9_ws0hp"]
+[ext_resource type="Texture2D" uid="uid://bfa6nfli4nsw1" path="res://Animation/A1 Animation/Schloss/Schloss_00009.png" id="10_m4d0b"]
+[ext_resource type="Texture2D" uid="uid://7yalxq4622xv" path="res://Animation/A1 Animation/Schloss/Schloss_00010.png" id="11_8xhy3"]
+[ext_resource type="Texture2D" uid="uid://can0sfvg6gnlr" path="res://Animation/A1 Animation/Schloss/Schloss_00011.png" id="12_x6lhx"]
+[ext_resource type="Texture2D" uid="uid://dxrq4r5024hoy" path="res://Animation/A1 Animation/Schloss/Schloss_00012.png" id="13_pghap"]
+[ext_resource type="Texture2D" uid="uid://vu05pr2tyncy" path="res://Animation/A1 Animation/Schloss/Schloss_00013.png" id="14_q7eku"]
+[ext_resource type="Texture2D" uid="uid://bj3ybk4082ef0" path="res://Animation/A1 Animation/Schloss/Schloss_00014.png" id="15_jn2wr"]
+[ext_resource type="Texture2D" uid="uid://0cvcfknpvvpr" path="res://Animation/A1 Animation/Schloss/Schloss_00015.png" id="16_iungc"]
+[ext_resource type="Texture2D" uid="uid://cfs11x87jai85" path="res://Animation/A1 Animation/Schloss/Schloss_00016.png" id="17_6t7xv"]
+[ext_resource type="Texture2D" uid="uid://w1luya2cnejs" path="res://Animation/A1 Animation/Schloss/Schloss_00017.png" id="18_6eh58"]
+[ext_resource type="Texture2D" uid="uid://pradkrdtedey" path="res://Animation/A1 Animation/Schloss/Schloss_00018.png" id="19_wix4u"]
+[ext_resource type="Texture2D" uid="uid://5qyjooifthm4" path="res://Animation/A1 Animation/Schloss/Schloss_00019.png" id="20_bum0m"]
+[ext_resource type="Texture2D" uid="uid://ohs6h5rpvi4" path="res://Animation/A1 Animation/Schloss/Schloss_00020.png" id="21_jfl41"]
+[ext_resource type="Texture2D" uid="uid://dcv2gfl61jxto" path="res://Animation/A1 Animation/Schloss/Schloss_00021.png" id="22_esura"]
+[ext_resource type="Texture2D" uid="uid://d4e40rlggdk27" path="res://Animation/A1 Animation/Schloss/Schloss_00022.png" id="23_0omty"]
+[ext_resource type="Texture2D" uid="uid://2kwiewbnvqcx" path="res://Animation/A1 Animation/Schloss/Schloss_00023.png" id="24_4cflh"]
+[ext_resource type="Texture2D" uid="uid://doqxlim50cx74" path="res://Animation/A1 Animation/Schloss/Schloss_00024.png" id="25_llos8"]
+[ext_resource type="Texture2D" uid="uid://bttm20q45bbji" path="res://Animation/A1 Animation/Schloss/Schloss_00025.png" id="26_m0olf"]
+[ext_resource type="Texture2D" uid="uid://dpq0nexwl8lqy" path="res://Animation/A1 Animation/Schloss/Schloss_00026.png" id="27_lswyf"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_figmi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_j50sy")
+}],
+"loop": false,
+"name": &"closed",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_j50sy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_8beew")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_dakjw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_i580k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_r5waw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_b2t2p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_w0ytx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_6ify7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_ws0hp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_m4d0b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_8xhy3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_x6lhx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_pghap")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_q7eku")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_jn2wr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_iungc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_6t7xv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_6eh58")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_wix4u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_bum0m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_jfl41")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_esura")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_0omty")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_4cflh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_llos8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_m0olf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_lswyf")
+}],
+"loop": false,
+"name": &"open",
+"speed": 20.0
+}]
+
+[node name="Castle" type="Node2D" unique_id=357497223 groups=["castle"]]
+script = ExtResource("1_8beew")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=92645891]
+sprite_frames = SubResource("SpriteFrames_figmi")
+animation = &"open"
+autoplay = "closed"
+frame = 5
+frame_progress = 0.2688045
+offset = Vector2(-4.86, 0)

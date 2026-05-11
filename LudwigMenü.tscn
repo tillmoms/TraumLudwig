@@ -35,6 +35,9 @@
 [ext_resource type="Texture2D" uid="uid://o2wfquj4cduw" path="res://Animation/MainMenuAnimation/Komp 1_00039.png" id="33_7nbgp"]
 [ext_resource type="Texture2D" uid="uid://bsxk26jhd0no0" path="res://Animation/MainMenuAnimation/Komp 1_00040.png" id="34_xtasd"]
 [ext_resource type="Texture2D" uid="uid://dhsvjg04wwnoj" path="res://Animation/MainMenuAnimation/Komp 1_00041.png" id="35_heaqo"]
+[ext_resource type="Texture2D" uid="uid://c55nlu1mnm7bg" path="res://2DSprites/Main Menue/Traumludwig.png" id="36_bgfvk"]
+[ext_resource type="Texture2D" uid="uid://b7eyvrcrc2hfu" path="res://2DSprites/Main Menue/ButtonV2.png" id="37_2gqag"]
+[ext_resource type="Texture2D" uid="uid://cdm7h60aq8oo5" path="res://2DSprites/Main Menue/Fenster.png" id="38_7mark"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_uxepr"]
 animations = [{
@@ -185,23 +188,20 @@ anchors_preset = 0
 offset_right = 960.0
 offset_bottom = 309.0
 
-[node name="Label" type="Label" parent="TitelArea" unique_id=839531270]
-layout_mode = 1
-offset_left = 50.0
-offset_top = 59.0
-offset_right = 685.0
-offset_bottom = 194.0
-theme_override_font_sizes/font_size = 96
-text = "TraumLudwig"
+[node name="Traumludwig" type="Sprite2D" parent="TitelArea" unique_id=545469240]
+position = Vector2(564, 183)
+scale = Vector2(0.475, 0.475)
+texture = ExtResource("36_bgfvk")
 
 [node name="ButtonArea" type="Control" parent="." unique_id=495159613]
 layout_mode = 1
 anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
-offset_top = -811.0
-offset_right = 480.0
-offset_bottom = -405.5
+offset_left = 19.0
+offset_top = -723.0
+offset_right = 499.0
+offset_bottom = -317.5
 grow_vertical = 0
 scale = Vector2(2, 2)
 
@@ -242,6 +242,26 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 20
 text = "Exit"
 
+[node name="ButtonV2" type="Sprite2D" parent="ButtonArea/Buttons" unique_id=722674132]
+position = Vector2(158.24998, 18.000006)
+scale = Vector2(0.61416656, 0.565625)
+texture = ExtResource("37_2gqag")
+
+[node name="ButtonV3" type="Sprite2D" parent="ButtonArea/Buttons" unique_id=1057363010]
+position = Vector2(159.5, 73.56251)
+scale = Vector2(0.61416656, 0.5890625)
+texture = ExtResource("37_2gqag")
+
+[node name="ButtonV4" type="Sprite2D" parent="ButtonArea/Buttons" unique_id=212064114]
+position = Vector2(159, 128.5)
+scale = Vector2(0.61416656, 0.565625)
+texture = ExtResource("37_2gqag")
+
+[node name="ButtonV5" type="Sprite2D" parent="ButtonArea/Buttons" unique_id=599403239]
+position = Vector2(159, 185.8125)
+scale = Vector2(0.61416656, 0.59531265)
+texture = ExtResource("37_2gqag")
+
 [node name="SettingsPanel" type="PanelContainer" parent="." unique_id=2037824346]
 visible = false
 layout_mode = 1
@@ -257,6 +277,11 @@ offset_bottom = 250.0
 grow_horizontal = 2
 grow_vertical = 2
 pivot_offset_ratio = Vector2(400, 250)
+
+[node name="Fenster" type="Sprite2D" parent="SettingsPanel" unique_id=1893265381]
+position = Vector2(398.00003, 250.49998)
+scale = Vector2(0.529375, 0.45083335)
+texture = ExtResource("38_7mark")
 
 [node name="Inhalt" type="VBoxContainer" parent="SettingsPanel" unique_id=1890218507]
 layout_mode = 2
@@ -339,10 +364,16 @@ theme_override_font_sizes/font_size = 30
 icon_alignment = 1
 
 [node name="BtnSettingsClose" type="Button" parent="SettingsPanel/Inhalt" unique_id=189935343]
+modulate = Color(0.3647059, 1, 1, 1)
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_font_sizes/font_size = 30
-text = "Schließen"
+text = "      Schließen    "
+
+[node name="ButtonV2" type="Sprite2D" parent="SettingsPanel/Inhalt" unique_id=1855182567]
+position = Vector2(310.49994, 369)
+scale = Vector2(0.48833328, 0.68749994)
+texture = ExtResource("37_2gqag")
 
 [node name="CreditsPanel" type="PanelContainer" parent="." unique_id=821754336]
 visible = false
@@ -352,13 +383,18 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -400.0
+offset_left = -511.0
 offset_top = -250.0
-offset_right = 400.0
-offset_bottom = 250.0
+offset_right = 511.0
+offset_bottom = 267.0
 grow_horizontal = 2
 grow_vertical = 2
 pivot_offset = Vector2(400, 250)
+
+[node name="Fenster2" type="Sprite2D" parent="CreditsPanel" unique_id=1022751980]
+position = Vector2(511.99994, 261.24997)
+scale = Vector2(0.6749999, 0.4645833)
+texture = ExtResource("38_7mark")
 
 [node name="Inhalt" type="VBoxContainer" parent="CreditsPanel" unique_id=1935895839]
 layout_mode = 2
@@ -380,14 +416,21 @@ size_flags_vertical = 1
 text = "Ein Spiel von: 
 Tillmann Münch, Emely Brand, Ece Dilara Sahin 
 
-Im Auftrag von ARD Digital
+Im Auftrag von ARD Gaming
 
 Musik: lizenzfreie Wagner-inspirierte Kompositionen
 
-Kurs: Character & Weltendesign
+Entstanden im Rahmen des Seminars Charakter und Weltendesign
+an der Hochschule Macromedia,
+ betreut von Prof. Anna Unterholzner , Semster 4.
 
 © 2026"
 
 [node name="BtnCreditClose" type="Button" parent="CreditsPanel/Inhalt" unique_id=2132133592]
 layout_mode = 2
 text = "Close"
+
+[node name="ButtonV2" type="Sprite2D" parent="CreditsPanel/Inhalt" unique_id=983006224]
+position = Vector2(252.5, 443)
+scale = Vector2(1.0849999, 0.45000032)
+texture = ExtResource("37_2gqag")

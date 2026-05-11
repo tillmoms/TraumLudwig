@@ -2,7 +2,7 @@ extends Node2D
 
 @export var tree_scene: PackedScene
 @export var obstacles_scene: PackedScene
-
+@export var castle_scene: PackedScene
 
 var wall_timer = 0.4
 const WALL_INTERVAL = 0.3
@@ -14,12 +14,19 @@ const OBSTACLE_INTERVAL = 1.0
 
 # NEU: Tutorial-Distanz
 const TUTORIAL_DISTANCE = 5000.0
+const TOTAL_DISTANCE = 35000.0
+const CASTLE_DISTANCE = 6000.0   
+var castle_spawned: bool = false
 var player_start_y = 0.0
 var start_position_set = false
 
 func _process(delta):
 	var player = get_tree().get_first_node_in_group("player")
 	if player == null:
+		return
+	
+	
+	if "is_crashed" in player and player.is_crashed:
 		return
 	
 	# NEU: Startposition einmalig speichern
@@ -51,13 +58,18 @@ func _process(delta):
 		spawn_tree(Vector2(1300.0, spawn_y + randf_range(-120.0, 120.0)), 1.0, true, 4)
 
 	# Hindernisse (Steine/Laternen) - NUR nach Tutorial-Distanz
-	if distance_traveled >= TUTORIAL_DISTANCE:
+	if distance_traveled >= TUTORIAL_DISTANCE and not is_near_castle(player):
 		obstacle_timer += delta
 		if obstacle_timer >= OBSTACLE_INTERVAL:
 			obstacle_timer = 0.0
 			var target_x = randf_range(-560.0, 560.0)
 			spawn_obstacle(spawn_y, target_x)
-
+	
+	# NEU: Schloss spawnen, sobald wir nah am Ziel sind
+	if not castle_spawned and distance_traveled >= CASTLE_DISTANCE:
+		castle_spawned = true
+		spawn_castle(player.global_position.y - 1500)
+		
 func spawn_tree(pos: Vector2, scale_factor: float, wall: bool = false, side: int = 1):
 	var tree = tree_scene.instantiate()
 	get_parent().add_child(tree)
@@ -75,3 +87,18 @@ func spawn_obstacle(spawn_y: float, target_x: float):
 	obstacle.target_x = target_x
 	obstacle.spawn_y = spawn_y
 	obstacle.call_deferred("update_scale")
+
+func spawn_castle(y_position: float):
+	if castle_scene == null:
+		push_warning("Castle scene noch nicht zugewiesen!")
+		return
+	var castle = castle_scene.instantiate()
+	get_parent().add_child(castle)
+	castle.global_position = Vector2(0.0, y_position)
+	
+func is_near_castle(player: Node2D) -> bool:
+	var castle = get_tree().get_first_node_in_group("castle")
+	if castle == null:
+		return false
+	var distance_to_castle = player.global_position.y - castle.global_position.y
+	return distance_to_castle < 2000.0  # gleicher Wert wie AUTO_CENTER_DISTANCE im Player

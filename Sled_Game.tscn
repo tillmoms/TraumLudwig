@@ -5,6 +5,17 @@
 [ext_resource type="Script" uid="uid://bwmcjlw1ks0s3" path="res://obstacle_spawner2.gd" id="2_62hqa"]
 [ext_resource type="PackedScene" uid="uid://d1dvbi3rfax1r" path="res://tree.tscn" id="3_yvn8m"]
 [ext_resource type="PackedScene" uid="uid://bhdehur4l2hmp" path="res://obstacles.tscn" id="4_4d5ai"]
+[ext_resource type="PackedScene" uid="uid://bpufxgp68mlr8" path="res://Castle.tscn" id="5_05w1s"]
+[ext_resource type="Script" uid="uid://jdrkkfalpdg1" path="res://playerfinal.gd" id="7_8qmur"]
+
+[sub_resource type="Gradient" id="Gradient_05w1s"]
+offsets = PackedFloat32Array(0, 0.99710983)
+colors = PackedColorArray(0.039215688, 0.09803922, 0.16078432, 1, 0.59227777, 0.7698421, 0.87784463, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_05w1s"]
+gradient = SubResource("Gradient_05w1s")
+fill_from = Vector2(1, 0)
+fill_to = Vector2(1, 1)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yvn8m"]
 size = Vector2(996.5, 49995)
@@ -15,10 +26,11 @@ metadata/_edit_vertical_guides_ = [6737.0]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1863429625]
 
-[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=1067483851]
+[node name="ColorRect" type="TextureRect" parent="CanvasLayer" unique_id=422177381]
+visible = false
 offset_right = 1921.0
-offset_bottom = 184.0
-color = Color(0, 1, 1, 1)
+offset_bottom = 175.0
+texture = SubResource("GradientTexture2D_05w1s")
 
 [node name="BG" type="TextureRect" parent="." unique_id=1818084334]
 z_index = -10
@@ -33,11 +45,13 @@ stretch_mode = 1
 script = ExtResource("2_62hqa")
 tree_scene = ExtResource("3_yvn8m")
 obstacles_scene = ExtResource("4_4d5ai")
+castle_scene = ExtResource("5_05w1s")
 
 [node name="Player" parent="." unique_id=1551188272 instance=ExtResource("1_wjlmy")]
 process_mode = 3
 position = Vector2(3.9999998, 701)
 scale = Vector2(0.4, 0.4)
+script = ExtResource("7_8qmur")
 
 [node name="Boder" type="Node2D" parent="." unique_id=1419010736]
 
