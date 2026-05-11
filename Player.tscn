@@ -1,20 +1,84 @@
 [gd_scene format=3 uid="uid://chnkbtf4iv4ty"]
 
-[ext_resource type="Script" uid="uid://dk3qxx6fx52ho" path="res://player.gd" id="1_xhfnw"]
-[ext_resource type="Texture2D" uid="uid://dgtlg8lxfrvv4" path="res://2DSprites/Abschnitt1/Schlitten_V1.png" id="2_kpjcp"]
+[ext_resource type="Script" uid="uid://ct0leic1rsy8f" path="res://player2.gd" id="1_dtqjt"]
+[ext_resource type="Texture2D" uid="uid://mtept6fol1jd" path="res://Animation/A1 Animation/Fail_f1.png" id="2_5ncpa"]
+[ext_resource type="Texture2D" uid="uid://bska0jnwagfoe" path="res://Animation/A1 Animation/Fail_f2.png" id="3_wi0c6"]
+[ext_resource type="Texture2D" uid="uid://cs63fcurxcvs4" path="res://Animation/A1 Animation/Fail_f3.png" id="4_hp6x6"]
+[ext_resource type="Texture2D" uid="uid://csd0dln472xqt" path="res://2DSprites/Abschnitt1/Ludwig_Laterne_aus.png" id="5_dtqjt"]
+[ext_resource type="Texture2D" uid="uid://bvqro4h0gcry3" path="res://Animation/A1 Animation/Ludwig links.png" id="6_3tkgg"]
+[ext_resource type="Texture2D" uid="uid://dx4wd8biec8ml" path="res://Animation/A1 Animation/Ludwig rechts.png" id="7_l6ohk"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_0rwas"]
-size = Vector2(80, 60)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kpjcp"]
+size = Vector2(203, 175)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oudfo"]
+atlas = ExtResource("6_3tkgg")
+region = Rect2(0, 0, 600, 600)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_d6rpx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_5ncpa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_wi0c6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_hp6x6")
+}],
+"loop": false,
+"name": &"crash",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_dtqjt")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oudfo")
+}],
+"loop": true,
+"name": &"left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_l6ohk")
+}],
+"loop": true,
+"name": &"right",
+"speed": 5.0
+}]
 
 [node name="Player" type="CharacterBody2D" unique_id=1551188272 groups=["player"]]
-script = ExtResource("1_xhfnw")
+script = ExtResource("1_dtqjt")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2032969758]
-shape = SubResource("RectangleShape2D_0rwas")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1080321731]
+position = Vector2(-11.5, -109.5)
+shape = SubResource("RectangleShape2D_kpjcp")
 
-[node name="Schlitten" type="Sprite2D" parent="." unique_id=2011116811]
-position = Vector2(0, -1000)
-texture = ExtResource("2_kpjcp")
+[node name="Schlitten" type="AnimatedSprite2D" parent="." unique_id=164692777]
+position = Vector2(3, -153)
+sprite_frames = SubResource("SpriteFrames_d6rpx")
+animation = &"idle"
+autoplay = "idle"
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1459231695]
 offset = Vector2(0, -400)
+limit_left = -950
+limit_right = 950
+
+[node name="SpurLinks" type="Line2D" parent="." unique_id=1210558866]
+z_index = 2999
+width = 8.0
+default_color = Color(0.6255971, 0.6255971, 0.62559694, 1)
+
+[node name="SpurRechts" type="Line2D" parent="." unique_id=1224321900]
+z_index = 2999
+default_color = Color(0.627451, 0.627451, 0.627451, 1)

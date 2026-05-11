@@ -3,6 +3,14 @@ extends CharacterBody2D
 const BASE_SPEED = 400.0
 var current_speed = BASE_SPEED
 
+
+func _ready():
+	z_index = 3000
+	$Schlitten.play("idle")
+
+	SpurLinks.top_level = true
+	SpurRechts.top_level = true
+	
 func _physics_process(delta):
 	velocity.y = -current_speed
 	

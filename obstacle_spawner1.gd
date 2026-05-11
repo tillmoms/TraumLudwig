@@ -1,7 +1,7 @@
 extends Node2D
 
 @export var tree_scene: PackedScene
-
+@export var obstacles_scene: PackedScene
 
 
 var wall_timer = 0.4
@@ -45,12 +45,12 @@ func _process(delta):
 		
 
 	
-	# HindernisBäume
-	#obstacle_timer += delta
-	#if obstacle_timer >= OBSTACLE_INTERVAL:
-		#obstacle_timer = 0.0
-		#var random_x = randf_range(-560.0, 560.0)
-		#spawn_tree(Vector2(random_x, spawn_y), 0.8, false)
+# Hindernisse (Steine/Laternen) mittig auf der Strecke
+	obstacle_timer += delta
+	if obstacle_timer >= OBSTACLE_INTERVAL:
+		obstacle_timer = 0.0
+		var random_x = randf_range(-560.0, 560.0)
+		spawn_obstacle(Vector2(random_x, spawn_y))
 
 func spawn_tree(pos: Vector2, scale_factor: float, wall: bool = false, side: int = 1):
 	var tree = tree_scene.instantiate()
@@ -60,3 +60,9 @@ func spawn_tree(pos: Vector2, scale_factor: float, wall: bool = false, side: int
 	tree.is_wall_tree = wall
 	tree.side = side
 	tree.call_deferred("init_tree")
+	
+func spawn_obstacle(pos: Vector2):
+	var obstacle = obstacles_scene.instantiate()
+	get_parent().add_child(obstacle)
+	obstacle.global_position = pos
+	obstacle.call_deferred("update_scale")

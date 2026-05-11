@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://bhdehur4l2hmp"]
+
+[ext_resource type="Script" uid="uid://c578tfgjpex00" path="res://obstacles.gd" id="1_rdw2r"]
+[ext_resource type="Texture2D" uid="uid://1djmq04iwrci" path="res://2DSprites/Abschnitt1/Stein1.png" id="1_wh1ty"]
+[ext_resource type="Texture2D" uid="uid://bkoxdax3jmutm" path="res://2DSprites/Abschnitt1/Stein2.png" id="2_rdw2r"]
+[ext_resource type="Texture2D" uid="uid://xuailmf55e5g" path="res://2DSprites/Abschnitt1/Stein3.png" id="3_wd5hg"]
+[ext_resource type="Texture2D" uid="uid://1n30d4un14xx" path="res://2DSprites/Abschnitt1/ Laterne_aus.png" id="4_ocss8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yupqg"]
+size = Vector2(823.5, 254.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3ratd"]
+size = Vector2(625, 132)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kwtp3"]
+size = Vector2(905, 215.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_im7cv"]
+size = Vector2(85, 174)
+
+[node name="Obstacle" type="StaticBody2D" unique_id=528194194]
+script = ExtResource("1_rdw2r")
+
+[node name="Stein1" type="Sprite2D" parent="." unique_id=1829091307]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_wh1ty")
+
+[node name="Stein1_Collision" type="CollisionShape2D" parent="." unique_id=649431083]
+position = Vector2(2, 10.000002)
+scale = Vector2(0.1, 0.1)
+shape = SubResource("RectangleShape2D_yupqg")
+
+[node name="Stein2" type="Sprite2D" parent="." unique_id=734622810]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_rdw2r")
+
+[node name="Stein2_Collision" type="CollisionShape2D" parent="." unique_id=279009065]
+position = Vector2(9, 35.000004)
+scale = Vector2(0.1, 0.1)
+shape = SubResource("RectangleShape2D_3ratd")
+
+[node name="Stein3" type="Sprite2D" parent="." unique_id=1224580633]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3_wd5hg")
+
+[node name="Stein3_Collision" type="CollisionShape2D" parent="." unique_id=596804548]
+position = Vector2(-4.7683716e-07, 18.000002)
+scale = Vector2(0.1, 0.1)
+shape = SubResource("RectangleShape2D_kwtp3")
+
+[node name="Laterne" type="Sprite2D" parent="." unique_id=1630610153]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("4_ocss8")
+
+[node name="LaterneCollision" type="CollisionShape2D" parent="." unique_id=1611466648]
+z_index = 1
+position = Vector2(1, 140)
+scale = Vector2(0.5, 0.5)
+shape = SubResource("RectangleShape2D_im7cv")

@@ -1,31 +1,52 @@
 [gd_scene format=3 uid="uid://cf5ieagit1p3v"]
 
-[ext_resource type="Script" uid="uid://g7wh8r5kll8v" path="res://obstacle_spawner1.gd" id="1_jahun"]
 [ext_resource type="PackedScene" uid="uid://chnkbtf4iv4ty" path="res://Player.tscn" id="1_wjlmy"]
 [ext_resource type="Texture2D" uid="uid://dgcik45t78ybo" path="res://2DSprites/Abschnitt1/Boden2.png" id="1_yvn8m"]
+[ext_resource type="Script" uid="uid://bwmcjlw1ks0s3" path="res://obstacle_spawner2.gd" id="2_62hqa"]
 [ext_resource type="PackedScene" uid="uid://d1dvbi3rfax1r" path="res://tree.tscn" id="3_yvn8m"]
+[ext_resource type="PackedScene" uid="uid://bhdehur4l2hmp" path="res://obstacles.tscn" id="4_4d5ai"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yvn8m"]
+size = Vector2(996.5, 49995)
 
 [node name="Node2D" type="Node2D" unique_id=705122885]
 metadata/_edit_horizontal_guides_ = [199.0]
+metadata/_edit_vertical_guides_ = [6737.0]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1863429625]
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=1067483851]
 offset_right = 1921.0
-offset_bottom = 198.0
+offset_bottom = 184.0
+color = Color(0, 1, 1, 1)
 
 [node name="BG" type="TextureRect" parent="." unique_id=1818084334]
 z_index = -10
-offset_left = -1487.0
-offset_top = -9859.0
-offset_right = 1513.0
-offset_bottom = 141.0
+offset_left = -1494.0
+offset_top = -49169.0
+offset_right = 1506.0
+offset_bottom = 831.0
 texture = ExtResource("1_yvn8m")
 stretch_mode = 1
 
 [node name="Obstacle Spawner" type="Node2D" parent="." unique_id=5769977]
-script = ExtResource("1_jahun")
+script = ExtResource("2_62hqa")
 tree_scene = ExtResource("3_yvn8m")
+obstacles_scene = ExtResource("4_4d5ai")
 
 [node name="Player" parent="." unique_id=1551188272 instance=ExtResource("1_wjlmy")]
-scale = Vector2(0.1, 0.1)
+process_mode = 3
+position = Vector2(3.9999998, 701)
+scale = Vector2(0.4, 0.4)
+
+[node name="Boder" type="Node2D" parent="." unique_id=1419010736]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Boder" unique_id=614775674]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Boder/StaticBody2D" unique_id=1217349398]
+position = Vector2(-1023, -24151)
+shape = SubResource("RectangleShape2D_yvn8m")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Boder/StaticBody2D" unique_id=1813118336]
+position = Vector2(1004, -24158)
+shape = SubResource("RectangleShape2D_yvn8m")
