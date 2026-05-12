@@ -73,9 +73,11 @@ func show_level_complete():
 
 
 func _on_neustart_pressed():
+	get_tree().paused = false
 	get_tree().reload_current_scene()
-
+	
 
 func _on_menu_pressed():
 	# Pfad zur Menü-Scene anpassen falls anders!
+	get_tree().paused = false
 	get_tree().change_scene_to_file("res://LudwigMenü.tscn")

@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://b7eyvrcrc2hfu" path="res://2DSprites/Main Menue/ButtonV2.png" id="6_rftc2"]
 
 [node name="Hud" type="Control" unique_id=1606365137 groups=["hud"]]
+process_mode = 3
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -75,10 +76,10 @@ grow_vertical = 2
 [node name="TextureRect" type="TextureRect" parent="LevelComplete" unique_id=5107088]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = -0.060097456
-anchor_top = -0.18921892
-anchor_right = 1.1454612
-anchor_bottom = 1.2986798
+anchor_left = -0.056307524
+anchor_top = -0.17821783
+anchor_right = 1.1318054
+anchor_bottom = 1.2477998
 scale = Vector2(0.9, 0.8)
 texture = ExtResource("5_1xsix")
 metadata/_edit_use_anchors_ = true
@@ -111,10 +112,10 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -215.0
-offset_top = -402.0
-offset_right = 151.0
-offset_bottom = -298.0
+offset_left = -205.5
+offset_top = -415.0
+offset_right = 160.5
+offset_bottom = -311.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_font_sizes/font_size = 70
@@ -127,22 +128,22 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -215.0
-offset_top = -236.0
-offset_right = 151.0
-offset_bottom = -132.0
+offset_left = -216.5
+offset_top = -263.0
+offset_right = 149.5
+offset_bottom = -159.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_font_sizes/font_size = 70
 text = "Menü"
 
 [node name="ButtonV2" type="Sprite2D" parent="LevelComplete" unique_id=1274640792]
-position = Vector2(888.5, 560)
+position = Vector2(892, 549.00006)
 scale = Vector2(0.815, 1.8500001)
 texture = ExtResource("6_rftc2")
 
 [node name="ButtonV3" type="Sprite2D" parent="LevelComplete" unique_id=840338892]
-position = Vector2(888, 724)
+position = Vector2(892.99994, 700)
 scale = Vector2(0.815, 1.8500001)
 texture = ExtResource("6_rftc2")
 

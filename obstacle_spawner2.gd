@@ -14,8 +14,8 @@ const OBSTACLE_INTERVAL = 1.0
 
 # NEU: Tutorial-Distanz
 const TUTORIAL_DISTANCE = 5000.0
-const TOTAL_DISTANCE = 30000.0
-const CASTLE_DISTANCE = 30000.0   
+const TOTAL_DISTANCE = 6000.0
+const CASTLE_DISTANCE = 6000.0   
 var castle_spawned: bool = false
 var player_start_y = 0.0
 var start_position_set = false
