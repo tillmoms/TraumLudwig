@@ -14,8 +14,8 @@ const OBSTACLE_INTERVAL = 1.0
 
 # NEU: Tutorial-Distanz
 const TUTORIAL_DISTANCE = 5000.0
-const TOTAL_DISTANCE = 6000.0
-const CASTLE_DISTANCE = 6000.0   
+const TOTAL_DISTANCE = 30000.0
+const CASTLE_DISTANCE = 30000.0   
 var castle_spawned: bool = false
 var player_start_y = 0.0
 var start_position_set = false
@@ -101,4 +101,4 @@ func is_near_castle(player: Node2D) -> bool:
 	if castle == null:
 		return false
 	var distance_to_castle = player.global_position.y - castle.global_position.y
-	return distance_to_castle < 3000.0  # gleicher Wert wie AUTO_CENTER_DISTANCE im Player
+	return distance_to_castle < 4000.0  # gleicher Wert wie AUTO_CENTER_DISTANCE im Player
