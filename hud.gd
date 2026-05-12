@@ -78,4 +78,4 @@ func _on_neustart_pressed():
 
 func _on_menu_pressed():
 	# Pfad zur Menü-Scene anpassen falls anders!
-	get_tree().change_scene_to_file("res://ludwigmenü.tscn")
+	get_tree().change_scene_to_file("res://LudwigMenü.tscn")
