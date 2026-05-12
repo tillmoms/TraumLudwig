@@ -38,6 +38,7 @@
 [ext_resource type="Texture2D" uid="uid://c55nlu1mnm7bg" path="res://2DSprites/Main Menue/Traumludwig.png" id="36_bgfvk"]
 [ext_resource type="Texture2D" uid="uid://b7eyvrcrc2hfu" path="res://2DSprites/Main Menue/ButtonV2.png" id="37_2gqag"]
 [ext_resource type="Texture2D" uid="uid://cdm7h60aq8oo5" path="res://2DSprites/Main Menue/Fenster.png" id="38_7mark"]
+[ext_resource type="AudioStream" uid="uid://blupx426m8uu3" path="res://Musik/MenüMusic.mp3" id="39_2gqag"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_uxepr"]
 animations = [{
@@ -147,6 +148,11 @@ animations = [{
 "loop": false,
 "name": &"jump",
 "speed": 24.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
 }]
 
 [node name="Control" type="Control" unique_id=89703459]
@@ -434,3 +440,8 @@ text = "Close"
 position = Vector2(252.5, 443)
 scale = Vector2(1.0849999, 0.45000032)
 texture = ExtResource("37_2gqag")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=862859552]
+stream = ExtResource("39_2gqag")
+volume_db = -31.608
+autoplay = true

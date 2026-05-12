@@ -7,6 +7,7 @@ const MIN_SCALE = 0.0
 const MAX_SCALE = 1.5
 const FLUCHTPUNKT_DISTANCE = 775.0  # gleiche Distanz wie obstacles
 
+var ludwig_passed: bool = false
 var gates_opened: bool = false
 
 @onready var sprite = $AnimatedSprite2D
@@ -29,7 +30,14 @@ func _process(_delta):
 		if distance < TRIGGER_DISTANCE:
 			gates_opened = true
 			sprite.play("open")
-
+	
+	# Hat Ludwig das Schloss schon passiert?
+	if gates_opened and not ludwig_passed:
+		# Player ist drüber, wenn seine Y kleiner ist als die des Schlosses
+		if player.global_position.y < global_position.y - 100:
+			ludwig_passed = true
+			level_complete()
+			
 func update_scale(player: Node2D):
 	var distance = global_position.y - player.global_position.y
 	# t: 0.0 = ganz weit weg, 1.0 = beim Spieler – gleiche Formel wie obstacles.gd
@@ -38,3 +46,13 @@ func update_scale(player: Node2D):
 	var t_eased = pow(t,1)   # wächst schnell am Anfang, langsam am Ende
 	var new_scale = lerp(MIN_SCALE, MAX_SCALE, t_eased)
 	scale = Vector2(new_scale, new_scale)
+	
+	
+func level_complete():
+	# HUD finden und Screen anzeigen
+	var hud = get_tree().get_first_node_in_group("hud")
+	if hud:
+		hud.show_level_complete()
+	
+	# Komplettes Spiel pausieren - alles friert ein
+	get_tree().paused = true

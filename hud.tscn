@@ -1,0 +1,188 @@
+[gd_scene format=3 uid="uid://ddq0d250cnyym"]
+
+[ext_resource type="Script" uid="uid://c66q506vv4vwv" path="res://hud.gd" id="1_640wx"]
+[ext_resource type="Texture2D" uid="uid://beclw35lyl18t" path="res://2DSprites/Abschnitt1/Leiste Rahmen.png" id="2_a2258"]
+[ext_resource type="Texture2D" uid="uid://5psaqjd8jhcm" path="res://2DSprites/Abschnitt1/Leiste Fill.png" id="3_1xsix"]
+[ext_resource type="Texture2D" uid="uid://dswq73uw56dk3" path="res://2DSprites/Abschnitt1/Timer Anzeige.png" id="4_rftc2"]
+[ext_resource type="Texture2D" uid="uid://cdm7h60aq8oo5" path="res://2DSprites/Main Menue/Fenster.png" id="5_1xsix"]
+[ext_resource type="Texture2D" uid="uid://b7eyvrcrc2hfu" path="res://2DSprites/Main Menue/ButtonV2.png" id="6_rftc2"]
+
+[node name="Hud" type="Control" unique_id=1606365137 groups=["hud"]]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_640wx")
+
+[node name="ProgressBar" type="TextureProgressBar" parent="." unique_id=478924337]
+custom_minimum_size = Vector2(600, 100)
+layout_mode = 0
+offset_left = 101.0
+offset_top = 181.0
+offset_right = 1301.0
+offset_bottom = 301.0
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+max_value = 1.0
+step = 0.01
+fill_mode = 1
+nine_patch_stretch = true
+texture_progress = ExtResource("3_1xsix")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1087018569]
+layout_mode = 0
+offset_left = 101.0
+offset_top = 181.0
+offset_right = 1301.0
+offset_bottom = 301.0
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_a2258")
+
+[node name="TimerHintergrund" type="TextureRect" parent="." unique_id=1998104631]
+layout_mode = 0
+offset_left = 1567.0
+offset_top = 29.000002
+offset_right = 2067.0
+offset_bottom = 189.0
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("4_rftc2")
+
+[node name="TimerLabel" type="Label" parent="TimerHintergrund" unique_id=1668714436]
+layout_mode = 0
+offset_left = 70.7692
+offset_top = 29.230766
+offset_right = 427.6923
+offset_bottom = 125.23077
+theme_override_colors/font_color = Color(0.22745098, 0.12156863, 0.039215688, 1)
+theme_override_font_sizes/font_size = 70
+text = "00:00"
+horizontal_alignment = 1
+
+[node name="LevelComplete" type="Control" parent="." unique_id=540867567]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 73.0
+offset_top = 171.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="LevelComplete" unique_id=5107088]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.060097456
+anchor_top = -0.18921892
+anchor_right = 1.1454612
+anchor_bottom = 1.2986798
+scale = Vector2(0.9, 0.8)
+texture = ExtResource("5_1xsix")
+metadata/_edit_use_anchors_ = true
+
+[node name="Titel" type="Label" parent="LevelComplete" unique_id=1696590708]
+layout_mode = 0
+offset_left = -25.0
+offset_top = -38.0
+offset_right = 1809.0
+offset_bottom = 239.0
+theme_override_font_sizes/font_size = 100
+text = "Level geschafft!
+"
+horizontal_alignment = 1
+
+[node name="ZeitLabel" type="Label" parent="LevelComplete" unique_id=1558303985]
+layout_mode = 0
+offset_left = 633.0
+offset_top = 331.0
+offset_right = 1149.0
+offset_bottom = 441.0
+theme_override_font_sizes/font_size = 80
+text = "00:00"
+horizontal_alignment = 1
+
+[node name="NeustartButton" type="Button" parent="LevelComplete" unique_id=2019952889]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -215.0
+offset_top = -402.0
+offset_right = 151.0
+offset_bottom = -298.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 70
+text = "Neustart"
+
+[node name="MenuButton" type="Button" parent="LevelComplete" unique_id=2048512825]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -215.0
+offset_top = -236.0
+offset_right = 151.0
+offset_bottom = -132.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 70
+text = "Menü"
+
+[node name="ButtonV2" type="Sprite2D" parent="LevelComplete" unique_id=1274640792]
+position = Vector2(888.5, 560)
+scale = Vector2(0.815, 1.8500001)
+texture = ExtResource("6_rftc2")
+
+[node name="ButtonV3" type="Sprite2D" parent="LevelComplete" unique_id=840338892]
+position = Vector2(888, 724)
+scale = Vector2(0.815, 1.8500001)
+texture = ExtResource("6_rftc2")
+
+[node name="Tutorial" type="Control" parent="." unique_id=431396769]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+grow_horizontal = 2
+
+[node name="Overlay" type="TextureRect" parent="Tutorial" unique_id=832577355]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -452.0
+offset_top = 29.0
+offset_right = 1368.0
+offset_bottom = 1245.0
+grow_horizontal = 2
+scale = Vector2(0.5, 0.25)
+texture = ExtResource("5_1xsix")
+
+[node name="Titel" type="Label" parent="Tutorial" unique_id=723521829]
+layout_mode = 0
+offset_left = -117.0
+offset_top = 81.0
+offset_right = 126.0
+offset_bottom = 136.0
+theme_override_font_sizes/font_size = 40
+text = "Willkommen"
+
+[node name="Erklärung" type="Label" parent="Tutorial" unique_id=647587236]
+layout_mode = 0
+offset_left = -329.0
+offset_top = 171.0
+offset_right = 338.0
+offset_bottom = 268.0
+theme_override_font_sizes/font_size = 20
+text = "Du bist Ludwig II. auf seinem Schlitten durch den Winterwald.
+Steuere mit Pfeiltasten LINKS und RECHTS,
+weiche Hindernissen aus und erreiche dein Schloss!"
+horizontal_alignment = 1

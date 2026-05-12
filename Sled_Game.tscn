@@ -7,6 +7,8 @@
 [ext_resource type="PackedScene" uid="uid://bhdehur4l2hmp" path="res://obstacles.tscn" id="4_4d5ai"]
 [ext_resource type="PackedScene" uid="uid://bpufxgp68mlr8" path="res://Castle.tscn" id="5_05w1s"]
 [ext_resource type="Script" uid="uid://jdrkkfalpdg1" path="res://playerfinal.gd" id="7_8qmur"]
+[ext_resource type="PackedScene" uid="uid://ddq0d250cnyym" path="res://hud.tscn" id="8_1jx6k"]
+[ext_resource type="AudioStream" uid="uid://dqqrj4o876bqt" path="res://Musik/SchlittenMusic.mp3" id="9_5ln8i"]
 
 [sub_resource type="Gradient" id="Gradient_05w1s"]
 offsets = PackedFloat32Array(0, 0.99710983)
@@ -31,6 +33,8 @@ visible = false
 offset_right = 1921.0
 offset_bottom = 175.0
 texture = SubResource("GradientTexture2D_05w1s")
+
+[node name="Hud" parent="CanvasLayer" unique_id=1606365137 instance=ExtResource("8_1jx6k")]
 
 [node name="BG" type="TextureRect" parent="." unique_id=1818084334]
 z_index = -10
@@ -64,3 +68,8 @@ shape = SubResource("RectangleShape2D_yvn8m")
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Boder/StaticBody2D" unique_id=1813118336]
 position = Vector2(1004, -24158)
 shape = SubResource("RectangleShape2D_yvn8m")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1038405860]
+stream = ExtResource("9_5ln8i")
+volume_db = -30.078
+autoplay = true
