@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://yj7a34owmh12"]
 
 [ext_resource type="Script" uid="uid://mub2ai3d8uys" path="res://ludwig.gd" id="1_8mrap"]
+[ext_resource type="Script" uid="uid://dg0b2sakdx4ae" path="res://area_2d.gd" id="2_q04gf"]
+[ext_resource type="Script" uid="uid://cye65d8e2chb6" path="res://pätsel_pop_up.gd" id="3_s8dg4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
 size = Vector2(41, 974)
@@ -17,40 +19,108 @@ size = Vector2(1303, 29)
 [sub_resource type="CircleShape2D" id="CircleShape2D_g4v7s"]
 radius = 22.0
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3gngh"]
+size = Vector2(150, 66)
+
 [node name="Node2D" type="Node2D" unique_id=144591603]
 
 [node name="Boden" type="ColorRect" parent="." unique_id=103263020]
-offset_right = 1280.0
-offset_bottom = 960.0
+offset_left = -643.0
+offset_top = -697.0
+offset_right = 637.0
+offset_bottom = 263.0
 color = Color(0.2520276, 0.25202766, 0.25202763, 1)
 
-[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1924201875]
+[node name="Grenze" type="StaticBody2D" parent="." unique_id=1924201875]
+position = Vector2(0, -192)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=824405014]
-position = Vector2(10.5, 477)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Grenze" unique_id=824405014]
+position = Vector2(-642, -29.5)
 shape = SubResource("RectangleShape2D_g4v7s")
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=1534124749]
-position = Vector2(643, 952)
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Grenze" unique_id=1534124749]
+position = Vector2(-9.5, 445.5)
 shape = SubResource("RectangleShape2D_yf5fn")
 
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D" unique_id=1203802128]
-position = Vector2(1275, 481.75)
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Grenze" unique_id=1203802128]
+position = Vector2(622.5, -24.75)
 shape = SubResource("RectangleShape2D_57qmd")
 
-[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D" unique_id=456455600]
-position = Vector2(641.5, 8.5)
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Grenze" unique_id=456455600]
+position = Vector2(-11, -498)
 shape = SubResource("RectangleShape2D_d0u6y")
 
-[node name="ludwig" type="CharacterBody2D" parent="." unique_id=2049528384]
+[node name="Ludwig" type="CharacterBody2D" parent="." unique_id=2049528384]
 script = ExtResource("1_8mrap")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ludwig" unique_id=1186011735]
-position = Vector2(89, 80)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ludwig" unique_id=1186011735]
 shape = SubResource("CircleShape2D_g4v7s")
 
-[node name="ColorRect" type="ColorRect" parent="ludwig" unique_id=1961133579]
-offset_left = 69.0
-offset_top = 60.0
-offset_right = 109.0
-offset_bottom = 100.0
+[node name="ColorRect" type="ColorRect" parent="Ludwig" unique_id=1961133579]
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+
+[node name="Camera2D" type="Camera2D" parent="Ludwig" unique_id=130024876]
+zoom = Vector2(2, 2)
+
+[node name="Rätsel" type="Node2D" parent="." unique_id=1679150016]
+position = Vector2(0, -192)
+
+[node name="Area2D" type="Area2D" parent="Rätsel" unique_id=1020571941 node_paths=PackedStringArray("popup")]
+script = ExtResource("2_q04gf")
+popup = NodePath("../../ui/PätselPopUp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rätsel/Area2D" unique_id=1982053458]
+position = Vector2(-4, -5)
+shape = SubResource("RectangleShape2D_3gngh")
+
+[node name="ColorRect" type="ColorRect" parent="Rätsel/Area2D" unique_id=2072090394]
+offset_left = -66.0
+offset_top = -29.0
+offset_right = 67.0
+offset_bottom = 23.0
+color = Color(0.15686275, 0, 0, 1)
+
+[node name="ui" type="CanvasLayer" parent="." unique_id=1559993194]
+
+[node name="PätselPopUp" type="Panel" parent="ui" unique_id=1269460482 node_paths=PackedStringArray("slots")]
+modulate = Color(0.35686275, 0.45882353, 1, 1)
+self_modulate = Color(0, 1, 1, 1)
+offset_left = 539.0
+offset_top = 323.0
+offset_right = 1323.0
+offset_bottom = 693.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+script = ExtResource("3_s8dg4")
+slots = [NodePath("Slot0"), NodePath("Slot1"), NodePath("Slot2"), NodePath("Slot3")]
+
+[node name="Slot0" type="ColorRect" parent="ui/PätselPopUp" unique_id=1880081310]
+layout_mode = 0
+offset_left = 84.0
+offset_top = 61.0
+offset_right = 124.0
+offset_bottom = 286.0
+
+[node name="Slot1" type="ColorRect" parent="ui/PätselPopUp" unique_id=245877059]
+layout_mode = 0
+offset_left = 463.0
+offset_top = 61.0
+offset_right = 503.0
+offset_bottom = 286.0
+
+[node name="Slot2" type="ColorRect" parent="ui/PätselPopUp" unique_id=512594356]
+layout_mode = 0
+offset_left = 283.0
+offset_top = 61.0
+offset_right = 323.0
+offset_bottom = 286.0
+
+[node name="Slot3" type="ColorRect" parent="ui/PätselPopUp" unique_id=1635540510]
+layout_mode = 0
+offset_left = 648.0
+offset_top = 61.0
+offset_right = 688.0
+offset_bottom = 286.0
