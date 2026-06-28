@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://yj7a34owmh12"]
+
+[ext_resource type="Script" uid="uid://mub2ai3d8uys" path="res://ludwig.gd" id="1_8mrap"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
+size = Vector2(41, 974)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yf5fn"]
+size = Vector2(1299, 33)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_57qmd"]
+size = Vector2(42, 974.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d0u6y"]
+size = Vector2(1303, 29)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_g4v7s"]
+radius = 22.0
+
+[node name="Node2D" type="Node2D" unique_id=144591603]
+
+[node name="Boden" type="ColorRect" parent="." unique_id=103263020]
+offset_right = 1280.0
+offset_bottom = 960.0
+color = Color(0.2520276, 0.25202766, 0.25202763, 1)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1924201875]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=824405014]
+position = Vector2(10.5, 477)
+shape = SubResource("RectangleShape2D_g4v7s")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=1534124749]
+position = Vector2(643, 952)
+shape = SubResource("RectangleShape2D_yf5fn")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D" unique_id=1203802128]
+position = Vector2(1275, 481.75)
+shape = SubResource("RectangleShape2D_57qmd")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D" unique_id=456455600]
+position = Vector2(641.5, 8.5)
+shape = SubResource("RectangleShape2D_d0u6y")
+
+[node name="ludwig" type="CharacterBody2D" parent="." unique_id=2049528384]
+script = ExtResource("1_8mrap")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ludwig" unique_id=1186011735]
+position = Vector2(89, 80)
+shape = SubResource("CircleShape2D_g4v7s")
+
+[node name="ColorRect" type="ColorRect" parent="ludwig" unique_id=1961133579]
+offset_left = 69.0
+offset_top = 60.0
+offset_right = 109.0
+offset_bottom = 100.0
