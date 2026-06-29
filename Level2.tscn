@@ -9,6 +9,11 @@
 [ext_resource type="Texture2D" uid="uid://cbmurbrv48thb" path="res://2DSprites/Abschnitt2/Mitte_Oben_.png" id="7_fvkd4"]
 [ext_resource type="Texture2D" uid="uid://dqsw3nb7xojwc" path="res://2DSprites/Abschnitt2/Oben_Rechts.png" id="8_pj4lr"]
 [ext_resource type="Texture2D" uid="uid://w1cvciwtwtis" path="res://2DSprites/Abschnitt2/Unten_Rechts.png" id="9_00xh1"]
+[ext_resource type="Texture2D" uid="uid://cdm7h60aq8oo5" path="res://2DSprites/Main Menue/Fenster.png" id="10_00xh1"]
+[ext_resource type="Texture2D" uid="uid://5i4ts665btae" path="res://2DSprites/Abschnitt2/MmePompadour.png" id="11_8tfmj"]
+[ext_resource type="Texture2D" uid="uid://ddd0ri2w3gr5w" path="res://2DSprites/Abschnitt2/LudwigXIV.png" id="12_jw1dd"]
+[ext_resource type="Texture2D" uid="uid://yakxscs3vt6f" path="res://2DSprites/Abschnitt2/LudwigXV.png" id="13_0xt02"]
+[ext_resource type="Texture2D" uid="uid://c58kyfy61487q" path="res://2DSprites/Abschnitt2/MmeMaintenon.png" id="14_q0xi3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
 size = Vector2(41, 974)
@@ -348,6 +353,428 @@ rotation = 3.1415927
 scale = Vector2(0.59375, 0.59375)
 texture = ExtResource("2_3453u")
 
+[node name="ObenLinks" type="Sprite2D" parent="Boden" unique_id=2116497538]
+position = Vector2(-21, -32.5)
+scale = Vector2(0.59375, 0.546875)
+texture = ExtResource("6_46pvi")
+
+[node name="MitteOben" type="Sprite2D" parent="Boden" unique_id=1136760909]
+position = Vector2(15.5, -32.5)
+scale = Vector2(0.546875, 0.546875)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben2" type="Sprite2D" parent="Boden" unique_id=553684512]
+position = Vector2(49.75, -32.25)
+scale = Vector2(0.5390634, 0.5390634)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben3" type="Sprite2D" parent="Boden" unique_id=986954290]
+position = Vector2(84, -32)
+scale = Vector2(0.546875, 0.546875)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben4" type="Sprite2D" parent="Boden" unique_id=1194462992]
+position = Vector2(118.5, -32.5)
+scale = Vector2(0.546875, 0.546875)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben5" type="Sprite2D" parent="Boden" unique_id=1311027732]
+position = Vector2(152.75, -32.25006)
+scale = Vector2(0.5390634, 0.5390634)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben6" type="Sprite2D" parent="Boden" unique_id=1545259858]
+position = Vector2(187, -31)
+scale = Vector2(0.546875, 0.546875)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben7" type="Sprite2D" parent="Boden" unique_id=1084186047]
+position = Vector2(221.5, -31.5)
+scale = Vector2(0.546875, 0.546875)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben8" type="Sprite2D" parent="Boden" unique_id=730251333]
+position = Vector2(255.75, -31.25)
+scale = Vector2(0.5390634, 0.5390634)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben9" type="Sprite2D" parent="Boden" unique_id=928468886]
+position = Vector2(290, -31)
+scale = Vector2(0.546875, 0.546875)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben10" type="Sprite2D" parent="Boden" unique_id=616600317]
+position = Vector2(324.5, -30.5)
+scale = Vector2(0.546875, 0.546875)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben11" type="Sprite2D" parent="Boden" unique_id=1189536639]
+position = Vector2(358.75, -31.25)
+scale = Vector2(0.5390634, 0.5390634)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben12" type="Sprite2D" parent="Boden" unique_id=1237403868]
+position = Vector2(393, -31)
+scale = Vector2(0.546875, 0.546875)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben13" type="Sprite2D" parent="Boden" unique_id=1210963792]
+position = Vector2(427.5, -31)
+scale = Vector2(0.546875, 0.546875)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben14" type="Sprite2D" parent="Boden" unique_id=121694287]
+position = Vector2(461.75, -30.75)
+scale = Vector2(0.5390634, 0.5390634)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben15" type="Sprite2D" parent="Boden" unique_id=935952455]
+position = Vector2(496, -30.5)
+scale = Vector2(0.546875, 0.546875)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben25" type="Sprite2D" parent="Boden" unique_id=1271235952]
+position = Vector2(839.5, -29.5)
+scale = Vector2(0.546875, 0.546875)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben26" type="Sprite2D" parent="Boden" unique_id=1003370973]
+position = Vector2(873.75, -29.25)
+scale = Vector2(0.5390634, 0.5390634)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben27" type="Sprite2D" parent="Boden" unique_id=607588003]
+position = Vector2(908, -29)
+scale = Vector2(0.546875, 0.546875)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben28" type="Sprite2D" parent="Boden" unique_id=1034719972]
+position = Vector2(942.5, -29.5)
+scale = Vector2(0.546875, 0.546875)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben29" type="Sprite2D" parent="Boden" unique_id=912015901]
+position = Vector2(976.75, -29.250061)
+scale = Vector2(0.5390634, 0.5390634)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben30" type="Sprite2D" parent="Boden" unique_id=1968271692]
+position = Vector2(1011, -28)
+scale = Vector2(0.546875, 0.546875)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben31" type="Sprite2D" parent="Boden" unique_id=2142678849]
+position = Vector2(1045.5, -28.5)
+scale = Vector2(0.546875, 0.546875)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben32" type="Sprite2D" parent="Boden" unique_id=727916387]
+position = Vector2(1079.75, -28.25)
+scale = Vector2(0.5390634, 0.5390634)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben33" type="Sprite2D" parent="Boden" unique_id=1027830656]
+position = Vector2(1114, -28)
+scale = Vector2(0.546875, 0.546875)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben34" type="Sprite2D" parent="Boden" unique_id=1498390206]
+position = Vector2(1148.5, -27.5)
+scale = Vector2(0.546875, 0.546875)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben35" type="Sprite2D" parent="Boden" unique_id=745274582]
+position = Vector2(1182.75, -28.25)
+scale = Vector2(0.5390634, 0.5390634)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben36" type="Sprite2D" parent="Boden" unique_id=1476877870]
+position = Vector2(1217, -28)
+scale = Vector2(0.546875, 0.546875)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben37" type="Sprite2D" parent="Boden" unique_id=2091399469]
+position = Vector2(1251.5, -28)
+scale = Vector2(0.546875, 0.546875)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben16" type="Sprite2D" parent="Boden" unique_id=1017342402]
+position = Vector2(530.5, -30)
+scale = Vector2(0.546875, 0.546875)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben17" type="Sprite2D" parent="Boden" unique_id=585574934]
+position = Vector2(564.75, -29.75)
+scale = Vector2(0.5390634, 0.5390634)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben18" type="Sprite2D" parent="Boden" unique_id=1520204052]
+position = Vector2(599, -29.5)
+scale = Vector2(0.546875, 0.546875)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben19" type="Sprite2D" parent="Boden" unique_id=1212964723]
+position = Vector2(633.5, -30)
+scale = Vector2(0.546875, 0.546875)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben20" type="Sprite2D" parent="Boden" unique_id=172516886]
+position = Vector2(667.75, -29.75)
+scale = Vector2(0.5390634, 0.5390634)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben21" type="Sprite2D" parent="Boden" unique_id=1045067071]
+position = Vector2(702, -29.5)
+scale = Vector2(0.546875, 0.546875)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben22" type="Sprite2D" parent="Boden" unique_id=379131827]
+position = Vector2(736.5, -29)
+scale = Vector2(0.546875, 0.546875)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben23" type="Sprite2D" parent="Boden" unique_id=1804259820]
+position = Vector2(770.75, -29.75)
+scale = Vector2(0.5390634, 0.5390634)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben24" type="Sprite2D" parent="Boden" unique_id=1581788147]
+position = Vector2(805, -29.5)
+scale = Vector2(0.546875, 0.546875)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben38" type="Sprite2D" parent="Boden" unique_id=2135004031]
+position = Vector2(46.25, 985.75)
+rotation = -3.1415925
+scale = Vector2(0.5390634, 0.5390634)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben74" type="Sprite2D" parent="Boden" unique_id=1793384962]
+position = Vector2(15, 986)
+rotation = -3.1415925
+scale = Vector2(0.5390634, 0.5390634)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben39" type="Sprite2D" parent="Boden" unique_id=1699706312]
+position = Vector2(80.5, 986)
+rotation = -3.1415925
+scale = Vector2(0.546875, 0.546875)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben40" type="Sprite2D" parent="Boden" unique_id=1164515025]
+position = Vector2(115, 985.5)
+rotation = -3.1415925
+scale = Vector2(0.546875, 0.546875)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben41" type="Sprite2D" parent="Boden" unique_id=1033690849]
+position = Vector2(149.25, 985.74994)
+rotation = -3.1415925
+scale = Vector2(0.5390634, 0.5390634)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben42" type="Sprite2D" parent="Boden" unique_id=1801049457]
+position = Vector2(183.5, 987)
+rotation = -3.1415925
+scale = Vector2(0.546875, 0.546875)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben43" type="Sprite2D" parent="Boden" unique_id=2064776397]
+position = Vector2(218, 986.5)
+rotation = -3.1415925
+scale = Vector2(0.546875, 0.546875)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben44" type="Sprite2D" parent="Boden" unique_id=590048049]
+position = Vector2(252.25, 986.75)
+rotation = -3.1415925
+scale = Vector2(0.5390634, 0.5390634)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben45" type="Sprite2D" parent="Boden" unique_id=2137797806]
+position = Vector2(286.5, 987)
+rotation = -3.1415925
+scale = Vector2(0.546875, 0.546875)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben46" type="Sprite2D" parent="Boden" unique_id=901511878]
+position = Vector2(321, 987.5)
+rotation = -3.1415925
+scale = Vector2(0.546875, 0.546875)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben47" type="Sprite2D" parent="Boden" unique_id=660647362]
+position = Vector2(355.25, 986.75)
+rotation = -3.1415925
+scale = Vector2(0.5390634, 0.5390634)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben48" type="Sprite2D" parent="Boden" unique_id=1848988651]
+position = Vector2(389.5, 987)
+rotation = -3.1415925
+scale = Vector2(0.546875, 0.546875)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben49" type="Sprite2D" parent="Boden" unique_id=544567544]
+position = Vector2(424, 987)
+rotation = -3.1415925
+scale = Vector2(0.546875, 0.546875)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben50" type="Sprite2D" parent="Boden" unique_id=321421045]
+position = Vector2(458.25, 987.25)
+rotation = -3.1415925
+scale = Vector2(0.5390634, 0.5390634)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben51" type="Sprite2D" parent="Boden" unique_id=1529087266]
+position = Vector2(492.5, 987.5)
+rotation = -3.1415925
+scale = Vector2(0.546875, 0.546875)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben52" type="Sprite2D" parent="Boden" unique_id=1820278540]
+position = Vector2(836, 988.5)
+rotation = -3.1415925
+scale = Vector2(0.546875, 0.546875)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben53" type="Sprite2D" parent="Boden" unique_id=2069211208]
+position = Vector2(870.25, 988.75)
+rotation = -3.1415925
+scale = Vector2(0.5390634, 0.5390634)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben54" type="Sprite2D" parent="Boden" unique_id=1487542250]
+position = Vector2(904.5, 989)
+rotation = -3.1415925
+scale = Vector2(0.546875, 0.546875)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben55" type="Sprite2D" parent="Boden" unique_id=582402638]
+position = Vector2(939, 988.5)
+rotation = -3.1415925
+scale = Vector2(0.546875, 0.546875)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben56" type="Sprite2D" parent="Boden" unique_id=1095967868]
+position = Vector2(973.25, 988.74994)
+rotation = -3.1415925
+scale = Vector2(0.5390634, 0.5390634)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben57" type="Sprite2D" parent="Boden" unique_id=808438013]
+position = Vector2(1007.5, 990)
+rotation = -3.1415925
+scale = Vector2(0.546875, 0.546875)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben58" type="Sprite2D" parent="Boden" unique_id=2114778781]
+position = Vector2(1042, 989.5)
+rotation = -3.1415925
+scale = Vector2(0.546875, 0.546875)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben59" type="Sprite2D" parent="Boden" unique_id=582848950]
+position = Vector2(1076.25, 989.75)
+rotation = -3.1415925
+scale = Vector2(0.5390634, 0.5390634)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben60" type="Sprite2D" parent="Boden" unique_id=2073514924]
+position = Vector2(1110.5, 990)
+rotation = -3.1415925
+scale = Vector2(0.546875, 0.546875)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben61" type="Sprite2D" parent="Boden" unique_id=151535057]
+position = Vector2(1145, 990.5)
+rotation = -3.1415925
+scale = Vector2(0.546875, 0.546875)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben62" type="Sprite2D" parent="Boden" unique_id=1643777141]
+position = Vector2(1179.25, 989.75)
+rotation = -3.1415925
+scale = Vector2(0.5390634, 0.5390634)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben63" type="Sprite2D" parent="Boden" unique_id=672886774]
+position = Vector2(1213.5, 990)
+rotation = -3.1415925
+scale = Vector2(0.546875, 0.546875)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben64" type="Sprite2D" parent="Boden" unique_id=1542623483]
+position = Vector2(1248, 990)
+rotation = -3.1415925
+scale = Vector2(0.546875, 0.546875)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben65" type="Sprite2D" parent="Boden" unique_id=864833214]
+position = Vector2(527, 988)
+rotation = -3.1415925
+scale = Vector2(0.546875, 0.546875)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben66" type="Sprite2D" parent="Boden" unique_id=2007222801]
+position = Vector2(561.25, 988.25)
+rotation = -3.1415925
+scale = Vector2(0.5390634, 0.5390634)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben67" type="Sprite2D" parent="Boden" unique_id=1411045253]
+position = Vector2(595.5, 988.5)
+rotation = -3.1415925
+scale = Vector2(0.546875, 0.546875)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben68" type="Sprite2D" parent="Boden" unique_id=2044745933]
+position = Vector2(630, 988)
+rotation = -3.1415925
+scale = Vector2(0.546875, 0.546875)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben69" type="Sprite2D" parent="Boden" unique_id=1416078166]
+position = Vector2(664.25, 988.25)
+rotation = -3.1415925
+scale = Vector2(0.5390634, 0.5390634)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben70" type="Sprite2D" parent="Boden" unique_id=2078211696]
+position = Vector2(698.5, 988.5)
+rotation = -3.1415925
+scale = Vector2(0.546875, 0.546875)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben71" type="Sprite2D" parent="Boden" unique_id=1520574853]
+position = Vector2(733, 989)
+rotation = -3.1415925
+scale = Vector2(0.546875, 0.546875)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben72" type="Sprite2D" parent="Boden" unique_id=1923671391]
+position = Vector2(767.25, 988.25)
+rotation = -3.1415925
+scale = Vector2(0.5390634, 0.5390634)
+texture = ExtResource("7_fvkd4")
+
+[node name="MitteOben73" type="Sprite2D" parent="Boden" unique_id=44074789]
+position = Vector2(801.5, 988.5)
+rotation = -3.1415925
+scale = Vector2(0.546875, 0.546875)
+texture = ExtResource("7_fvkd4")
+
+[node name="ObenRechts" type="Sprite2D" parent="Boden" unique_id=1531639546]
+position = Vector2(1286.5, -27.5)
+scale = Vector2(0.5468745, 0.5468745)
+texture = ExtResource("8_pj4lr")
+
+[node name="UntenRechts" type="Sprite2D" parent="Boden" unique_id=1382598724]
+position = Vector2(1284.75, 989.25)
+scale = Vector2(0.5859386, 0.5859386)
+texture = ExtResource("9_00xh1")
+
 [node name="Ludwig" type="CharacterBody2D" parent="." unique_id=2049528384]
 script = ExtResource("1_8mrap")
 
@@ -423,424 +850,27 @@ offset_top = 61.0
 offset_right = 688.0
 offset_bottom = 286.0
 
-[node name="ObenLinks" type="Sprite2D" parent="." unique_id=2116497538]
-position = Vector2(-664, -729.5)
-scale = Vector2(0.59375, 0.546875)
-texture = ExtResource("6_46pvi")
-
-[node name="MitteOben" type="Sprite2D" parent="." unique_id=1136760909]
-position = Vector2(-627.5, -729.5)
-scale = Vector2(0.546875, 0.546875)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben2" type="Sprite2D" parent="." unique_id=553684512]
-position = Vector2(-593.25, -729.25)
-scale = Vector2(0.5390634, 0.5390634)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben3" type="Sprite2D" parent="." unique_id=986954290]
-position = Vector2(-559, -729)
-scale = Vector2(0.546875, 0.546875)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben4" type="Sprite2D" parent="." unique_id=1194462992]
-position = Vector2(-524.5, -729.5)
-scale = Vector2(0.546875, 0.546875)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben5" type="Sprite2D" parent="." unique_id=1311027732]
-position = Vector2(-490.25, -729.25006)
-scale = Vector2(0.5390634, 0.5390634)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben6" type="Sprite2D" parent="." unique_id=1545259858]
-position = Vector2(-456, -728)
-scale = Vector2(0.546875, 0.546875)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben7" type="Sprite2D" parent="." unique_id=1084186047]
-position = Vector2(-421.5, -728.5)
-scale = Vector2(0.546875, 0.546875)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben8" type="Sprite2D" parent="." unique_id=730251333]
-position = Vector2(-387.25, -728.25)
-scale = Vector2(0.5390634, 0.5390634)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben9" type="Sprite2D" parent="." unique_id=928468886]
-position = Vector2(-353, -728)
-scale = Vector2(0.546875, 0.546875)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben10" type="Sprite2D" parent="." unique_id=616600317]
-position = Vector2(-318.5, -727.5)
-scale = Vector2(0.546875, 0.546875)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben11" type="Sprite2D" parent="." unique_id=1189536639]
-position = Vector2(-284.25, -728.25)
-scale = Vector2(0.5390634, 0.5390634)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben12" type="Sprite2D" parent="." unique_id=1237403868]
-position = Vector2(-250, -728)
-scale = Vector2(0.546875, 0.546875)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben13" type="Sprite2D" parent="." unique_id=1210963792]
-position = Vector2(-215.5, -728)
-scale = Vector2(0.546875, 0.546875)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben14" type="Sprite2D" parent="." unique_id=121694287]
-position = Vector2(-181.25, -727.75)
-scale = Vector2(0.5390634, 0.5390634)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben15" type="Sprite2D" parent="." unique_id=935952455]
-position = Vector2(-147, -727.5)
-scale = Vector2(0.546875, 0.546875)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben25" type="Sprite2D" parent="." unique_id=1271235952]
-position = Vector2(196.5, -726.5)
-scale = Vector2(0.546875, 0.546875)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben26" type="Sprite2D" parent="." unique_id=1003370973]
-position = Vector2(230.75, -726.25)
-scale = Vector2(0.5390634, 0.5390634)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben27" type="Sprite2D" parent="." unique_id=607588003]
-position = Vector2(265, -726)
-scale = Vector2(0.546875, 0.546875)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben28" type="Sprite2D" parent="." unique_id=1034719972]
-position = Vector2(299.5, -726.5)
-scale = Vector2(0.546875, 0.546875)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben29" type="Sprite2D" parent="." unique_id=912015901]
-position = Vector2(333.75, -726.25006)
-scale = Vector2(0.5390634, 0.5390634)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben30" type="Sprite2D" parent="." unique_id=1968271692]
-position = Vector2(368, -725)
-scale = Vector2(0.546875, 0.546875)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben31" type="Sprite2D" parent="." unique_id=2142678849]
-position = Vector2(402.5, -725.5)
-scale = Vector2(0.546875, 0.546875)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben32" type="Sprite2D" parent="." unique_id=727916387]
-position = Vector2(436.75, -725.25)
-scale = Vector2(0.5390634, 0.5390634)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben33" type="Sprite2D" parent="." unique_id=1027830656]
-position = Vector2(471, -725)
-scale = Vector2(0.546875, 0.546875)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben34" type="Sprite2D" parent="." unique_id=1498390206]
-position = Vector2(505.5, -724.5)
-scale = Vector2(0.546875, 0.546875)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben35" type="Sprite2D" parent="." unique_id=745274582]
-position = Vector2(539.75, -725.25)
-scale = Vector2(0.5390634, 0.5390634)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben36" type="Sprite2D" parent="." unique_id=1476877870]
-position = Vector2(574, -725)
-scale = Vector2(0.546875, 0.546875)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben37" type="Sprite2D" parent="." unique_id=2091399469]
-position = Vector2(608.5, -725)
-scale = Vector2(0.546875, 0.546875)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben16" type="Sprite2D" parent="." unique_id=1017342402]
-position = Vector2(-112.50001, -727)
-scale = Vector2(0.546875, 0.546875)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben17" type="Sprite2D" parent="." unique_id=585574934]
-position = Vector2(-78.25, -726.75)
-scale = Vector2(0.5390634, 0.5390634)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben18" type="Sprite2D" parent="." unique_id=1520204052]
-position = Vector2(-44, -726.5)
-scale = Vector2(0.546875, 0.546875)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben19" type="Sprite2D" parent="." unique_id=1212964723]
-position = Vector2(-9.5, -727)
-scale = Vector2(0.546875, 0.546875)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben20" type="Sprite2D" parent="." unique_id=172516886]
-position = Vector2(24.75, -726.75)
-scale = Vector2(0.5390634, 0.5390634)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben21" type="Sprite2D" parent="." unique_id=1045067071]
-position = Vector2(59, -726.5)
-scale = Vector2(0.546875, 0.546875)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben22" type="Sprite2D" parent="." unique_id=379131827]
-position = Vector2(93.5, -726)
-scale = Vector2(0.546875, 0.546875)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben23" type="Sprite2D" parent="." unique_id=1804259820]
-position = Vector2(127.75, -726.75)
-scale = Vector2(0.5390634, 0.5390634)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben24" type="Sprite2D" parent="." unique_id=1581788147]
-position = Vector2(162, -726.5)
-scale = Vector2(0.546875, 0.546875)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben38" type="Sprite2D" parent="." unique_id=2135004031]
-position = Vector2(-596.75, 288.75)
-rotation = 3.1415927
-scale = Vector2(0.5390634, 0.5390634)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben74" type="Sprite2D" parent="." unique_id=1793384962]
-position = Vector2(-628, 289.00003)
-rotation = 3.1415927
-scale = Vector2(0.5390634, 0.5390634)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben39" type="Sprite2D" parent="." unique_id=1699706312]
-position = Vector2(-562.5, 289)
-rotation = 3.1415927
-scale = Vector2(0.546875, 0.546875)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben40" type="Sprite2D" parent="." unique_id=1164515025]
-position = Vector2(-528, 288.5)
-rotation = 3.1415927
-scale = Vector2(0.546875, 0.546875)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben41" type="Sprite2D" parent="." unique_id=1033690849]
-position = Vector2(-493.75, 288.74994)
-rotation = 3.1415927
-scale = Vector2(0.5390634, 0.5390634)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben42" type="Sprite2D" parent="." unique_id=1801049457]
-position = Vector2(-459.5, 290)
-rotation = 3.1415927
-scale = Vector2(0.546875, 0.546875)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben43" type="Sprite2D" parent="." unique_id=2064776397]
-position = Vector2(-425, 289.5)
-rotation = 3.1415927
-scale = Vector2(0.546875, 0.546875)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben44" type="Sprite2D" parent="." unique_id=590048049]
-position = Vector2(-390.75, 289.75)
-rotation = 3.1415927
-scale = Vector2(0.5390634, 0.5390634)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben45" type="Sprite2D" parent="." unique_id=2137797806]
-position = Vector2(-356.5, 290)
-rotation = 3.1415927
-scale = Vector2(0.546875, 0.546875)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben46" type="Sprite2D" parent="." unique_id=901511878]
-position = Vector2(-322, 290.5)
-rotation = 3.1415927
-scale = Vector2(0.546875, 0.546875)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben47" type="Sprite2D" parent="." unique_id=660647362]
-position = Vector2(-287.75, 289.75)
-rotation = 3.1415927
-scale = Vector2(0.5390634, 0.5390634)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben48" type="Sprite2D" parent="." unique_id=1848988651]
-position = Vector2(-253.5, 290)
-rotation = 3.1415927
-scale = Vector2(0.546875, 0.546875)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben49" type="Sprite2D" parent="." unique_id=544567544]
-position = Vector2(-219, 290)
-rotation = 3.1415927
-scale = Vector2(0.546875, 0.546875)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben50" type="Sprite2D" parent="." unique_id=321421045]
-position = Vector2(-184.75, 290.25)
-rotation = 3.1415927
-scale = Vector2(0.5390634, 0.5390634)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben51" type="Sprite2D" parent="." unique_id=1529087266]
-position = Vector2(-150.5, 290.5)
-rotation = 3.1415927
-scale = Vector2(0.546875, 0.546875)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben52" type="Sprite2D" parent="." unique_id=1820278540]
-position = Vector2(193, 291.5)
-rotation = 3.1415927
-scale = Vector2(0.546875, 0.546875)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben53" type="Sprite2D" parent="." unique_id=2069211208]
-position = Vector2(227.25, 291.75)
-rotation = 3.1415927
-scale = Vector2(0.5390634, 0.5390634)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben54" type="Sprite2D" parent="." unique_id=1487542250]
-position = Vector2(261.5, 292)
-rotation = 3.1415927
-scale = Vector2(0.546875, 0.546875)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben55" type="Sprite2D" parent="." unique_id=582402638]
-position = Vector2(296, 291.5)
-rotation = 3.1415927
-scale = Vector2(0.546875, 0.546875)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben56" type="Sprite2D" parent="." unique_id=1095967868]
-position = Vector2(330.25, 291.74994)
-rotation = 3.1415927
-scale = Vector2(0.5390634, 0.5390634)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben57" type="Sprite2D" parent="." unique_id=808438013]
-position = Vector2(364.5, 293)
-rotation = 3.1415927
-scale = Vector2(0.546875, 0.546875)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben58" type="Sprite2D" parent="." unique_id=2114778781]
-position = Vector2(399, 292.5)
-rotation = 3.1415927
-scale = Vector2(0.546875, 0.546875)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben59" type="Sprite2D" parent="." unique_id=582848950]
-position = Vector2(433.25, 292.75)
-rotation = 3.1415927
-scale = Vector2(0.5390634, 0.5390634)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben60" type="Sprite2D" parent="." unique_id=2073514924]
-position = Vector2(467.5, 293)
-rotation = 3.1415927
-scale = Vector2(0.546875, 0.546875)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben61" type="Sprite2D" parent="." unique_id=151535057]
-position = Vector2(502, 293.5)
-rotation = 3.1415927
-scale = Vector2(0.546875, 0.546875)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben62" type="Sprite2D" parent="." unique_id=1643777141]
-position = Vector2(536.25, 292.75)
-rotation = 3.1415927
-scale = Vector2(0.5390634, 0.5390634)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben63" type="Sprite2D" parent="." unique_id=672886774]
-position = Vector2(570.5, 293)
-rotation = 3.1415927
-scale = Vector2(0.546875, 0.546875)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben64" type="Sprite2D" parent="." unique_id=1542623483]
-position = Vector2(605, 293)
-rotation = 3.1415927
-scale = Vector2(0.546875, 0.546875)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben65" type="Sprite2D" parent="." unique_id=864833214]
-position = Vector2(-116, 291)
-rotation = 3.1415927
-scale = Vector2(0.546875, 0.546875)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben66" type="Sprite2D" parent="." unique_id=2007222801]
-position = Vector2(-81.75, 291.25)
-rotation = 3.1415927
-scale = Vector2(0.5390634, 0.5390634)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben67" type="Sprite2D" parent="." unique_id=1411045253]
-position = Vector2(-47.5, 291.5)
-rotation = 3.1415927
-scale = Vector2(0.546875, 0.546875)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben68" type="Sprite2D" parent="." unique_id=2044745933]
-position = Vector2(-13, 291)
-rotation = 3.1415927
-scale = Vector2(0.546875, 0.546875)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben69" type="Sprite2D" parent="." unique_id=1416078166]
-position = Vector2(21.25, 291.25)
-rotation = 3.1415927
-scale = Vector2(0.5390634, 0.5390634)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben70" type="Sprite2D" parent="." unique_id=2078211696]
-position = Vector2(55.5, 291.5)
-rotation = 3.1415927
-scale = Vector2(0.546875, 0.546875)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben71" type="Sprite2D" parent="." unique_id=1520574853]
-position = Vector2(90, 292)
-rotation = 3.1415927
-scale = Vector2(0.546875, 0.546875)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben72" type="Sprite2D" parent="." unique_id=1923671391]
-position = Vector2(124.25, 291.25)
-rotation = 3.1415927
-scale = Vector2(0.5390634, 0.5390634)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben73" type="Sprite2D" parent="." unique_id=44074789]
-position = Vector2(158.5, 291.5)
-rotation = 3.1415927
-scale = Vector2(0.546875, 0.546875)
-texture = ExtResource("7_fvkd4")
-
-[node name="ObenRechts" type="Sprite2D" parent="." unique_id=1531639546]
-position = Vector2(643.5, -724.5)
-scale = Vector2(0.5468745, 0.5468745)
-texture = ExtResource("8_pj4lr")
-
-[node name="UntenRechts" type="Sprite2D" parent="." unique_id=1382598724]
-position = Vector2(641.75, 292.25003)
-scale = Vector2(0.5859386, 0.5859386)
-texture = ExtResource("9_00xh1")
+[node name="Fenster" type="Sprite2D" parent="ui" unique_id=533585069]
+position = Vector2(947, 496)
+scale = Vector2(0.56999993, 0.39333332)
+texture = ExtResource("10_00xh1")
+
+[node name="MmePompadour" type="Sprite2D" parent="ui/Fenster" unique_id=726980296]
+position = Vector2(396.49146, 27.966309)
+scale = Vector2(1.1871346, 1.7669492)
+texture = ExtResource("11_8tfmj")
+
+[node name="LudwigXiv" type="Sprite2D" parent="ui/Fenster" unique_id=197197111]
+position = Vector2(70.17554, 53.389893)
+scale = Vector2(1.0701755, 1.5635594)
+texture = ExtResource("12_jw1dd")
+
+[node name="LudwigXv" type="Sprite2D" parent="ui/Fenster" unique_id=693694717]
+position = Vector2(-264.91223, -15.254028)
+scale = Vector2(1.1549709, 1.7203391)
+texture = ExtResource("13_0xt02")
+
+[node name="MmeMaintenon" type="Sprite2D" parent="ui/Fenster" unique_id=1761615285]
+position = Vector2(-577.193, 5.084717)
+scale = Vector2(1.2134503, 1.6228814)
+texture = ExtResource("14_q0xi3")
