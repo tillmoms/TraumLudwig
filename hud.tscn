@@ -106,7 +106,7 @@ theme_override_font_sizes/font_size = 80
 text = "00:00"
 horizontal_alignment = 1
 
-[node name="NeustartButton" type="Button" parent="LevelComplete" unique_id=2019952889]
+[node name="WeiterButton" type="Button" parent="LevelComplete" unique_id=2019952889]
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
@@ -120,7 +120,7 @@ offset_bottom = -311.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_font_sizes/font_size = 70
-text = "Neustart"
+text = "Weiter"
 
 [node name="MenuButton" type="Button" parent="LevelComplete" unique_id=2048512825]
 layout_mode = 1
@@ -188,3 +188,5 @@ text = "Du bist Ludwig II. auf seinem Schlitten durch den Winterwald.
 Steuere mit Pfeiltasten LINKS und RECHTS,
 weiche Hindernissen aus und erreiche dein Schloss!"
 horizontal_alignment = 1
+
+[connection signal="pressed" from="LevelComplete/WeiterButton" to="." method="_on_weiter_button_pressed"]

@@ -12,12 +12,12 @@ var start_set: bool = false
 @onready var timer_label = $TimerHintergrund/TimerLabel
 @onready var level_complete_screen = $LevelComplete
 @onready var zeit_label = $LevelComplete/ZeitLabel
-@onready var neustart_button = $LevelComplete/NeustartButton
+@onready var Weiter_button = $LevelComplete/WeiterButton
 @onready var menu_button = $LevelComplete/MenuButton
 @onready var tutorial_screen = $Tutorial
 
 func _ready():
-	neustart_button.pressed.connect(_on_neustart_pressed)
+	
 	menu_button.pressed.connect(_on_menu_pressed)
 	
 	# Tutorial anzeigen + Spiel pausieren
@@ -72,12 +72,14 @@ func show_level_complete():
 	level_complete_screen.visible = true
 
 
-func _on_neustart_pressed():
-	get_tree().paused = false
-	get_tree().reload_current_scene()
-	
+
 
 func _on_menu_pressed():
 	# Pfad zur Menü-Scene anpassen falls anders!
 	get_tree().paused = false
 	get_tree().change_scene_to_file("res://LudwigMenü.tscn")
+
+
+func _on_weiter_button_pressed() -> void:
+	get_tree().paused = false
+	get_tree().change_scene_to_file("res://level2.tscn")

@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://crg887dlhcd33" path="res://2DSprites/Abschnitt2/Unten_Links.png" id="1_6x3wt"]
 [ext_resource type="Script" uid="uid://mub2ai3d8uys" path="res://ludwig.gd" id="1_8mrap"]
+[ext_resource type="Texture2D" uid="uid://dexhgyx33qeru" path="res://2DSprites/Abschnitt2/Boden.png" id="1_jw1dd"]
 [ext_resource type="Texture2D" uid="uid://dxtcrhrky1peg" path="res://2DSprites/Abschnitt2/Oben_Links_Seite.png" id="2_3453u"]
 [ext_resource type="Script" uid="uid://dg0b2sakdx4ae" path="res://area_2d.gd" id="2_q04gf"]
 [ext_resource type="Script" uid="uid://cye65d8e2chb6" path="res://pätsel_pop_up.gd" id="3_s8dg4"]
@@ -9,11 +10,46 @@
 [ext_resource type="Texture2D" uid="uid://cbmurbrv48thb" path="res://2DSprites/Abschnitt2/Mitte_Oben_.png" id="7_fvkd4"]
 [ext_resource type="Texture2D" uid="uid://dqsw3nb7xojwc" path="res://2DSprites/Abschnitt2/Oben_Rechts.png" id="8_pj4lr"]
 [ext_resource type="Texture2D" uid="uid://w1cvciwtwtis" path="res://2DSprites/Abschnitt2/Unten_Rechts.png" id="9_00xh1"]
+[ext_resource type="Texture2D" uid="uid://dlrugyos0rqc4" path="res://2DSprites/Abschnitt2/AnimationUnten1.png" id="9_j286a"]
 [ext_resource type="Texture2D" uid="uid://cdm7h60aq8oo5" path="res://2DSprites/Main Menue/Fenster.png" id="10_00xh1"]
+[ext_resource type="Texture2D" uid="uid://s6stf7hr346d" path="res://2DSprites/Abschnitt2/AnimationUnten2.png" id="10_fi16w"]
 [ext_resource type="Texture2D" uid="uid://5i4ts665btae" path="res://2DSprites/Abschnitt2/MmePompadour.png" id="11_8tfmj"]
+[ext_resource type="Texture2D" uid="uid://cxm7q0u7t4566" path="res://2DSprites/Abschnitt2/AnimationUnten3.png" id="11_vho2s"]
+[ext_resource type="Script" uid="uid://dt3qquprpbw4l" path="res://fenster.gd" id="12_0xt02"]
+[ext_resource type="Texture2D" uid="uid://wpx30eko4sr2" path="res://2DSprites/Abschnitt2/AnimationUnten4.png" id="12_annok"]
 [ext_resource type="Texture2D" uid="uid://ddd0ri2w3gr5w" path="res://2DSprites/Abschnitt2/LudwigXIV.png" id="12_jw1dd"]
 [ext_resource type="Texture2D" uid="uid://yakxscs3vt6f" path="res://2DSprites/Abschnitt2/LudwigXV.png" id="13_0xt02"]
+[ext_resource type="Texture2D" uid="uid://dswuhn7g6tdgy" path="res://2DSprites/Abschnitt2/AnimationUnten5.png" id="13_hg0l0"]
 [ext_resource type="Texture2D" uid="uid://c58kyfy61487q" path="res://2DSprites/Abschnitt2/MmeMaintenon.png" id="14_q0xi3"]
+[ext_resource type="Texture2D" uid="uid://02aitsubu5t4" path="res://2DSprites/Abschnitt2/AnimationUnten6.png" id="14_q3blq"]
+[ext_resource type="Texture2D" uid="uid://bmnovj75gjq0n" path="res://2DSprites/Abschnitt2/AnimationUnten7.png" id="15_16k7p"]
+[ext_resource type="Texture2D" uid="uid://b0oe8i7avg8ir" path="res://2DSprites/Abschnitt2/AnimationLinks1.png" id="16_kkqk6"]
+[ext_resource type="Texture2D" uid="uid://c820xw5qb7w01" path="res://2DSprites/Abschnitt2/AnimationLinks2.png" id="17_d1oeb"]
+[ext_resource type="Texture2D" uid="uid://lunebxvk36xd" path="res://2DSprites/Abschnitt2/AnimationLinks3.png" id="18_j14yx"]
+[ext_resource type="Texture2D" uid="uid://4lhvhu6353kh" path="res://2DSprites/Abschnitt2/AnimationLinks4.png" id="19_u12cy"]
+[ext_resource type="Texture2D" uid="uid://c3cm4rh2jqmbu" path="res://2DSprites/Abschnitt2/AnimationLinks5.png" id="20_63mpe"]
+[ext_resource type="Texture2D" uid="uid://bo03mvc4xiygo" path="res://2DSprites/Abschnitt2/AnimationLinks6.png" id="21_gmppw"]
+[ext_resource type="Texture2D" uid="uid://begyawuls0fk5" path="res://2DSprites/Abschnitt2/AnimationLinks7.png" id="22_l0rr1"]
+[ext_resource type="Texture2D" uid="uid://07f5kekvr3gx" path="res://2DSprites/Abschnitt2/AnimationRechts-1.png" id="23_acg8c"]
+[ext_resource type="Texture2D" uid="uid://chajfmymswxw2" path="res://2DSprites/Abschnitt2/AnimationRechts-2.png" id="24_ckv4c"]
+[ext_resource type="Texture2D" uid="uid://ciri44c5n7u1j" path="res://2DSprites/Abschnitt2/AnimationRechts-3.png" id="25_spmjc"]
+[ext_resource type="Texture2D" uid="uid://dlb01w2h4i65b" path="res://2DSprites/Abschnitt2/AnimationRechts-4.png" id="26_whrns"]
+[ext_resource type="Texture2D" uid="uid://pd84h2j2ybe" path="res://2DSprites/Abschnitt2/AnimationRechts-5.png" id="27_k0itm"]
+[ext_resource type="Texture2D" uid="uid://ujohujgl6gdf" path="res://2DSprites/Abschnitt2/AnimationRechts-6.png" id="28_pjq62"]
+[ext_resource type="Texture2D" uid="uid://bfvyjttdm2313" path="res://2DSprites/Abschnitt2/AnimationRechts-7.png" id="29_bjdue"]
+[ext_resource type="Texture2D" uid="uid://2qa3oo545uba" path="res://2DSprites/Abschnitt2/AnimationRechts-8.png" id="30_633el"]
+[ext_resource type="Texture2D" uid="uid://bx4w0cw1fxj7v" path="res://2DSprites/Abschnitt2/AnimationOben1.png" id="31_oh2yx"]
+[ext_resource type="Texture2D" uid="uid://bijgeb5rg05fw" path="res://2DSprites/Abschnitt2/AnimationOben2.png" id="32_whmx2"]
+[ext_resource type="Texture2D" uid="uid://ddppaj615r17k" path="res://2DSprites/Abschnitt2/AnimationOben3.png" id="33_3k4gv"]
+[ext_resource type="Texture2D" uid="uid://b3d2j5bvpan31" path="res://2DSprites/Abschnitt2/AnimationOben4.png" id="34_4hbsb"]
+[ext_resource type="Texture2D" uid="uid://yx60o1e86uu5" path="res://2DSprites/Abschnitt2/AnimationOben5.png" id="35_oj5ks"]
+[ext_resource type="Texture2D" uid="uid://2aw3qvr8tkmd" path="res://2DSprites/Abschnitt2/AnimationOben6.png" id="36_5bkqw"]
+[ext_resource type="Texture2D" uid="uid://df22taohmfpe1" path="res://2DSprites/Abschnitt2/AnimationOben7.png" id="37_n4hvk"]
+[ext_resource type="Texture2D" uid="uid://s78fng124i4r" path="res://2DSprites/Abschnitt2/MmeMaintenon_falsch.png" id="46_hg0l0"]
+[ext_resource type="Texture2D" uid="uid://b0wsvlygfv2oh" path="res://2DSprites/Abschnitt2/MmePompadour_falsch.png" id="47_q3blq"]
+[ext_resource type="Texture2D" uid="uid://bb3mjt1b8s6cl" path="res://2DSprites/Abschnitt2/LudwigXIV_falsch.png" id="48_16k7p"]
+[ext_resource type="Texture2D" uid="uid://fqnf612fel82" path="res://2DSprites/Abschnitt2/LudwigXV_falsch.png" id="49_kkqk6"]
+[ext_resource type="AudioStream" uid="uid://b0lrpulmw1dq2" path="res://Musik/Marko Maksimovic - The Night Before Wonders.mp3" id="50_q3blq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
 size = Vector2(41, 974)
@@ -27,8 +63,124 @@ size = Vector2(42, 974.5)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d0u6y"]
 size = Vector2(1303, 29)
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_g4v7s"]
-radius = 22.0
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_j286a"]
+radius = 28.0
+height = 102.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g4v7s"]
+animations = [{
+"frames": [],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_j286a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_fi16w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_vho2s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_annok")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_hg0l0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_q3blq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_16k7p")
+}],
+"loop": 1,
+"name": &"walk_down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_kkqk6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_d1oeb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_j14yx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_u12cy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_63mpe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_gmppw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_l0rr1")
+}],
+"loop": 1,
+"name": &"walk_left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("23_acg8c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_ckv4c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_spmjc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_whrns")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_k0itm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_pjq62")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_bjdue")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_633el")
+}],
+"loop": 1,
+"name": &"walk_right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("31_oh2yx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_whmx2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_3k4gv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_4hbsb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_oj5ks")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_5bkqw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_n4hvk")
+}],
+"loop": 1,
+"name": &"walk_up",
+"speed": 5.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3gngh"]
 size = Vector2(150, 66)
@@ -61,731 +213,1039 @@ offset_top = -697.0
 offset_right = 637.0
 offset_bottom = 263.0
 color = Color(0.2520276, 0.25202766, 0.25202763, 1)
+metadata/_edit_lock_ = true
+
+[node name="Boden2" type="Sprite2D" parent="Boden" unique_id=1072045386]
+position = Vector2(74, 63)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden3" type="Sprite2D" parent="Boden" unique_id=949065818]
+position = Vector2(202, 63)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden4" type="Sprite2D" parent="Boden" unique_id=1363006638]
+position = Vector2(330, 63)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden5" type="Sprite2D" parent="Boden" unique_id=664186128]
+position = Vector2(458, 63)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden6" type="Sprite2D" parent="Boden" unique_id=428088631]
+position = Vector2(585, 63)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden17" type="Sprite2D" parent="Boden" unique_id=551911483]
+position = Vector2(41, 190)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden18" type="Sprite2D" parent="Boden" unique_id=989879930]
+position = Vector2(169, 190)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden19" type="Sprite2D" parent="Boden" unique_id=26004064]
+position = Vector2(297, 190)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden20" type="Sprite2D" parent="Boden" unique_id=718347463]
+position = Vector2(425, 190)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden21" type="Sprite2D" parent="Boden" unique_id=819190670]
+position = Vector2(552, 190)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden7" type="Sprite2D" parent="Boden" unique_id=1821445265]
+position = Vector2(713, 63)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden8" type="Sprite2D" parent="Boden" unique_id=1729083338]
+position = Vector2(841, 63)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden9" type="Sprite2D" parent="Boden" unique_id=1660384541]
+position = Vector2(969, 63)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden10" type="Sprite2D" parent="Boden" unique_id=2104067288]
+position = Vector2(1097, 63)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden11" type="Sprite2D" parent="Boden" unique_id=1179332929]
+position = Vector2(1226, 63)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden12" type="Sprite2D" parent="Boden" unique_id=940054495]
+position = Vector2(1193, 191)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden13" type="Sprite2D" parent="Boden" unique_id=255138473]
+position = Vector2(1065, 191)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden14" type="Sprite2D" parent="Boden" unique_id=1154711112]
+position = Vector2(681, 191)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden15" type="Sprite2D" parent="Boden" unique_id=1970007032]
+position = Vector2(937, 191)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden16" type="Sprite2D" parent="Boden" unique_id=2008435367]
+position = Vector2(809, 191)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden22" type="Sprite2D" parent="Boden" unique_id=1846621591]
+position = Vector2(70, 316)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden23" type="Sprite2D" parent="Boden" unique_id=1936246711]
+position = Vector2(198, 316)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden24" type="Sprite2D" parent="Boden" unique_id=434776280]
+position = Vector2(326, 316)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden25" type="Sprite2D" parent="Boden" unique_id=218802980]
+position = Vector2(454, 316)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden26" type="Sprite2D" parent="Boden" unique_id=1356249043]
+position = Vector2(581, 316)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden27" type="Sprite2D" parent="Boden" unique_id=548122912]
+position = Vector2(37, 443)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden28" type="Sprite2D" parent="Boden" unique_id=1481040145]
+position = Vector2(165, 443)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden29" type="Sprite2D" parent="Boden" unique_id=1854696205]
+position = Vector2(293, 443)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden30" type="Sprite2D" parent="Boden" unique_id=428569387]
+position = Vector2(421, 443)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden31" type="Sprite2D" parent="Boden" unique_id=963450381]
+position = Vector2(548, 443)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden32" type="Sprite2D" parent="Boden" unique_id=574542363]
+position = Vector2(709, 316)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden33" type="Sprite2D" parent="Boden" unique_id=1530462727]
+position = Vector2(837, 316)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden34" type="Sprite2D" parent="Boden" unique_id=893061597]
+position = Vector2(965, 316)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden35" type="Sprite2D" parent="Boden" unique_id=213545047]
+position = Vector2(1093, 316)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden36" type="Sprite2D" parent="Boden" unique_id=893809736]
+position = Vector2(1221, 316)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden37" type="Sprite2D" parent="Boden" unique_id=377403063]
+position = Vector2(1188, 444)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden38" type="Sprite2D" parent="Boden" unique_id=135477026]
+position = Vector2(1060, 444)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden39" type="Sprite2D" parent="Boden" unique_id=1314510681]
+position = Vector2(676, 444)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden40" type="Sprite2D" parent="Boden" unique_id=1757152711]
+position = Vector2(932, 444)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden41" type="Sprite2D" parent="Boden" unique_id=1651398595]
+position = Vector2(804, 444)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden42" type="Sprite2D" parent="Boden" unique_id=1261621833]
+position = Vector2(68, 571)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden43" type="Sprite2D" parent="Boden" unique_id=136965442]
+position = Vector2(196, 571)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden44" type="Sprite2D" parent="Boden" unique_id=349121785]
+position = Vector2(324, 571)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden45" type="Sprite2D" parent="Boden" unique_id=527733270]
+position = Vector2(452, 571)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden46" type="Sprite2D" parent="Boden" unique_id=1580010981]
+position = Vector2(579, 571)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden47" type="Sprite2D" parent="Boden" unique_id=370758994]
+position = Vector2(35, 699)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden48" type="Sprite2D" parent="Boden" unique_id=1303442710]
+position = Vector2(163, 699)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden49" type="Sprite2D" parent="Boden" unique_id=152683308]
+position = Vector2(291, 699)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden50" type="Sprite2D" parent="Boden" unique_id=590937711]
+position = Vector2(419, 699)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden51" type="Sprite2D" parent="Boden" unique_id=306148659]
+position = Vector2(546, 699)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden52" type="Sprite2D" parent="Boden" unique_id=1421629526]
+position = Vector2(707, 572)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden53" type="Sprite2D" parent="Boden" unique_id=815313677]
+position = Vector2(835, 572)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden54" type="Sprite2D" parent="Boden" unique_id=1735750708]
+position = Vector2(963, 572)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden55" type="Sprite2D" parent="Boden" unique_id=1919650352]
+position = Vector2(1091, 572)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden56" type="Sprite2D" parent="Boden" unique_id=684155864]
+position = Vector2(1219, 572)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden57" type="Sprite2D" parent="Boden" unique_id=1393967246]
+position = Vector2(1186, 700)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden58" type="Sprite2D" parent="Boden" unique_id=1512071272]
+position = Vector2(1058, 700)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden59" type="Sprite2D" parent="Boden" unique_id=1645495743]
+position = Vector2(674, 699)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden60" type="Sprite2D" parent="Boden" unique_id=1916897571]
+position = Vector2(930, 699)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden61" type="Sprite2D" parent="Boden" unique_id=1581771409]
+position = Vector2(802, 699)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden62" type="Sprite2D" parent="Boden" unique_id=1353975487]
+position = Vector2(67, 827)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden63" type="Sprite2D" parent="Boden" unique_id=2002643422]
+position = Vector2(193, 827)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden64" type="Sprite2D" parent="Boden" unique_id=1377547729]
+position = Vector2(321, 827)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden65" type="Sprite2D" parent="Boden" unique_id=2112225436]
+position = Vector2(449, 827)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden66" type="Sprite2D" parent="Boden" unique_id=1018558972]
+position = Vector2(576, 827)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden67" type="Sprite2D" parent="Boden" unique_id=514375776]
+position = Vector2(39, 955)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden68" type="Sprite2D" parent="Boden" unique_id=814519917]
+position = Vector2(167, 955)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden69" type="Sprite2D" parent="Boden" unique_id=687898331]
+position = Vector2(295, 955)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden70" type="Sprite2D" parent="Boden" unique_id=1992459397]
+position = Vector2(423, 955)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden71" type="Sprite2D" parent="Boden" unique_id=244432600]
+position = Vector2(550, 955)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden72" type="Sprite2D" parent="Boden" unique_id=715826346]
+position = Vector2(704, 827)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden73" type="Sprite2D" parent="Boden" unique_id=825386739]
+position = Vector2(832, 827)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden74" type="Sprite2D" parent="Boden" unique_id=1597048549]
+position = Vector2(960, 827)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden75" type="Sprite2D" parent="Boden" unique_id=65106341]
+position = Vector2(1088, 827)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden76" type="Sprite2D" parent="Boden" unique_id=797170966]
+position = Vector2(1216, 827)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden77" type="Sprite2D" parent="Boden" unique_id=1192227458]
+position = Vector2(1190, 955)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden78" type="Sprite2D" parent="Boden" unique_id=815004882]
+position = Vector2(1062, 955)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden79" type="Sprite2D" parent="Boden" unique_id=1854432797]
+position = Vector2(678, 955)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden80" type="Sprite2D" parent="Boden" unique_id=1696012033]
+position = Vector2(934, 955)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
+
+[node name="Boden81" type="Sprite2D" parent="Boden" unique_id=2014952382]
+position = Vector2(806, 955)
+texture = ExtResource("1_jw1dd")
+metadata/_edit_lock_ = true
 
 [node name="UntenLinks" type="Sprite2D" parent="Boden" unique_id=565887462]
-position = Vector2(-21, 984.00006)
-scale = Vector2(0.59375, 0.59375)
+position = Vector2(-21, 994.00006)
 texture = ExtResource("1_6x3wt")
+metadata/_edit_lock_ = true
 
 [node name="ObenLinksSeite" type="Sprite2D" parent="Boden" unique_id=2041082560]
 position = Vector2(-21, 908)
-scale = Vector2(0.59375, 0.59375)
 texture = ExtResource("2_3453u")
+metadata/_edit_lock_ = true
 
 [node name="ObenLinksSeite5" type="Sprite2D" parent="Boden" unique_id=1009578107]
 position = Vector2(-21, 946)
-scale = Vector2(0.59375, 0.59375)
 texture = ExtResource("2_3453u")
+metadata/_edit_lock_ = true
 
 [node name="ObenLinksSeite2" type="Sprite2D" parent="Boden" unique_id=1658138827]
 position = Vector2(-21, 870)
-scale = Vector2(0.59375, 0.59375)
 texture = ExtResource("2_3453u")
+metadata/_edit_lock_ = true
 
 [node name="ObenLinksSeite3" type="Sprite2D" parent="Boden" unique_id=889577461]
 position = Vector2(-21, 833)
-scale = Vector2(0.59375, 0.59375)
 texture = ExtResource("2_3453u")
+metadata/_edit_lock_ = true
 
 [node name="ObenLinksSeite4" type="Sprite2D" parent="Boden" unique_id=146637865]
 position = Vector2(-21, 795)
-scale = Vector2(0.59375, 0.59375)
 texture = ExtResource("2_3453u")
+metadata/_edit_lock_ = true
 
 [node name="ObenLinksSeite6" type="Sprite2D" parent="Boden" unique_id=1591871202]
 position = Vector2(-21, 719)
-scale = Vector2(0.59375, 0.59375)
 texture = ExtResource("2_3453u")
+metadata/_edit_lock_ = true
 
 [node name="ObenLinksSeite7" type="Sprite2D" parent="Boden" unique_id=1410482969]
 position = Vector2(-21, 757)
-scale = Vector2(0.59375, 0.59375)
 texture = ExtResource("2_3453u")
+metadata/_edit_lock_ = true
 
 [node name="ObenLinksSeite8" type="Sprite2D" parent="Boden" unique_id=1428947857]
 position = Vector2(-21, 681)
-scale = Vector2(0.59375, 0.59375)
 texture = ExtResource("2_3453u")
+metadata/_edit_lock_ = true
 
 [node name="ObenLinksSeite9" type="Sprite2D" parent="Boden" unique_id=885293656]
 position = Vector2(-21, 644)
-scale = Vector2(0.59375, 0.59375)
 texture = ExtResource("2_3453u")
+metadata/_edit_lock_ = true
 
 [node name="ObenLinksSeite10" type="Sprite2D" parent="Boden" unique_id=550823004]
 position = Vector2(-21, 606)
-scale = Vector2(0.59375, 0.59375)
 texture = ExtResource("2_3453u")
+metadata/_edit_lock_ = true
 
 [node name="ObenLinksSeite11" type="Sprite2D" parent="Boden" unique_id=1478418204]
 position = Vector2(-21, 531)
-scale = Vector2(0.59375, 0.59375)
 texture = ExtResource("2_3453u")
+metadata/_edit_lock_ = true
 
 [node name="ObenLinksSeite12" type="Sprite2D" parent="Boden" unique_id=1377604832]
 position = Vector2(-21, 569)
-scale = Vector2(0.59375, 0.59375)
 texture = ExtResource("2_3453u")
+metadata/_edit_lock_ = true
 
 [node name="ObenLinksSeite13" type="Sprite2D" parent="Boden" unique_id=2118469304]
 position = Vector2(-21, 493)
-scale = Vector2(0.59375, 0.59375)
 texture = ExtResource("2_3453u")
+metadata/_edit_lock_ = true
 
 [node name="ObenLinksSeite14" type="Sprite2D" parent="Boden" unique_id=980883603]
 position = Vector2(-21, 456)
-scale = Vector2(0.59375, 0.59375)
 texture = ExtResource("2_3453u")
+metadata/_edit_lock_ = true
 
 [node name="ObenLinksSeite15" type="Sprite2D" parent="Boden" unique_id=493972459]
 position = Vector2(-21, 418)
-scale = Vector2(0.59375, 0.59375)
 texture = ExtResource("2_3453u")
+metadata/_edit_lock_ = true
 
 [node name="ObenLinksSeite16" type="Sprite2D" parent="Boden" unique_id=1809182385]
 position = Vector2(-21, 342)
-scale = Vector2(0.59375, 0.59375)
 texture = ExtResource("2_3453u")
+metadata/_edit_lock_ = true
 
 [node name="ObenLinksSeite17" type="Sprite2D" parent="Boden" unique_id=1117458900]
 position = Vector2(-21, 380)
-scale = Vector2(0.59375, 0.59375)
 texture = ExtResource("2_3453u")
+metadata/_edit_lock_ = true
 
 [node name="ObenLinksSeite18" type="Sprite2D" parent="Boden" unique_id=1528167080]
 position = Vector2(-21, 304)
-scale = Vector2(0.59375, 0.59375)
 texture = ExtResource("2_3453u")
+metadata/_edit_lock_ = true
 
 [node name="ObenLinksSeite19" type="Sprite2D" parent="Boden" unique_id=1712728219]
 position = Vector2(-21, 267)
-scale = Vector2(0.59375, 0.59375)
 texture = ExtResource("2_3453u")
+metadata/_edit_lock_ = true
 
 [node name="ObenLinksSeite20" type="Sprite2D" parent="Boden" unique_id=1019469807]
 position = Vector2(-21, 229)
-scale = Vector2(0.59375, 0.59375)
 texture = ExtResource("2_3453u")
+metadata/_edit_lock_ = true
 
 [node name="ObenLinksSeite21" type="Sprite2D" parent="Boden" unique_id=776716634]
 position = Vector2(-21, 192)
-scale = Vector2(0.59375, 0.59375)
 texture = ExtResource("2_3453u")
+metadata/_edit_lock_ = true
 
 [node name="ObenLinksSeite22" type="Sprite2D" parent="Boden" unique_id=1867086529]
 position = Vector2(-21, 154)
-scale = Vector2(0.59375, 0.59375)
 texture = ExtResource("2_3453u")
+metadata/_edit_lock_ = true
 
 [node name="ObenLinksSeite23" type="Sprite2D" parent="Boden" unique_id=1153128411]
 position = Vector2(-21, 78)
-scale = Vector2(0.59375, 0.59375)
 texture = ExtResource("2_3453u")
+metadata/_edit_lock_ = true
 
 [node name="ObenLinksSeite24" type="Sprite2D" parent="Boden" unique_id=1283333037]
 position = Vector2(-21, 116)
-scale = Vector2(0.59375, 0.59375)
 texture = ExtResource("2_3453u")
+metadata/_edit_lock_ = true
 
 [node name="ObenLinksSeite25" type="Sprite2D" parent="Boden" unique_id=516777649]
 position = Vector2(-21, 40)
-scale = Vector2(0.59375, 0.59375)
 texture = ExtResource("2_3453u")
+metadata/_edit_lock_ = true
 
 [node name="ObenLinksSeite26" type="Sprite2D" parent="Boden" unique_id=202181952]
 position = Vector2(-21, 3)
-scale = Vector2(0.59375, 0.59375)
 texture = ExtResource("2_3453u")
+metadata/_edit_lock_ = true
 
 [node name="ObenLinksSeite27" type="Sprite2D" parent="Boden" unique_id=1728883582]
 position = Vector2(1285, 914)
 rotation = 3.1415927
-scale = Vector2(0.59375, 0.59375)
 texture = ExtResource("2_3453u")
+metadata/_edit_lock_ = true
 
 [node name="ObenLinksSeite28" type="Sprite2D" parent="Boden" unique_id=1416816926]
 position = Vector2(1285, 952)
 rotation = 3.1415927
-scale = Vector2(0.59375, 0.59375)
 texture = ExtResource("2_3453u")
+metadata/_edit_lock_ = true
 
 [node name="ObenLinksSeite29" type="Sprite2D" parent="Boden" unique_id=1569958645]
 position = Vector2(1285, 876)
 rotation = 3.1415927
-scale = Vector2(0.59375, 0.59375)
 texture = ExtResource("2_3453u")
+metadata/_edit_lock_ = true
 
 [node name="ObenLinksSeite30" type="Sprite2D" parent="Boden" unique_id=984721791]
 position = Vector2(1285, 839)
 rotation = 3.1415927
-scale = Vector2(0.59375, 0.59375)
 texture = ExtResource("2_3453u")
+metadata/_edit_lock_ = true
 
 [node name="ObenLinksSeite31" type="Sprite2D" parent="Boden" unique_id=782480069]
 position = Vector2(1285, 801)
 rotation = 3.1415927
-scale = Vector2(0.59375, 0.59375)
 texture = ExtResource("2_3453u")
+metadata/_edit_lock_ = true
 
 [node name="ObenLinksSeite32" type="Sprite2D" parent="Boden" unique_id=1119355508]
 position = Vector2(1285, 725)
 rotation = 3.1415927
-scale = Vector2(0.59375, 0.59375)
 texture = ExtResource("2_3453u")
+metadata/_edit_lock_ = true
 
 [node name="ObenLinksSeite33" type="Sprite2D" parent="Boden" unique_id=1909596315]
 position = Vector2(1285, 763)
 rotation = 3.1415927
-scale = Vector2(0.59375, 0.59375)
 texture = ExtResource("2_3453u")
+metadata/_edit_lock_ = true
 
 [node name="ObenLinksSeite34" type="Sprite2D" parent="Boden" unique_id=292190256]
 position = Vector2(1285, 687)
 rotation = 3.1415927
-scale = Vector2(0.59375, 0.59375)
 texture = ExtResource("2_3453u")
+metadata/_edit_lock_ = true
 
 [node name="ObenLinksSeite35" type="Sprite2D" parent="Boden" unique_id=1614168049]
 position = Vector2(1285, 650)
 rotation = 3.1415927
-scale = Vector2(0.59375, 0.59375)
 texture = ExtResource("2_3453u")
+metadata/_edit_lock_ = true
 
 [node name="ObenLinksSeite36" type="Sprite2D" parent="Boden" unique_id=1170311547]
 position = Vector2(1285, 612)
 rotation = 3.1415927
-scale = Vector2(0.59375, 0.59375)
 texture = ExtResource("2_3453u")
+metadata/_edit_lock_ = true
 
 [node name="ObenLinksSeite37" type="Sprite2D" parent="Boden" unique_id=1011169575]
 position = Vector2(1285, 537)
 rotation = 3.1415927
-scale = Vector2(0.59375, 0.59375)
 texture = ExtResource("2_3453u")
+metadata/_edit_lock_ = true
 
 [node name="ObenLinksSeite38" type="Sprite2D" parent="Boden" unique_id=430556243]
 position = Vector2(1285, 575)
 rotation = 3.1415927
-scale = Vector2(0.59375, 0.59375)
 texture = ExtResource("2_3453u")
+metadata/_edit_lock_ = true
 
 [node name="ObenLinksSeite39" type="Sprite2D" parent="Boden" unique_id=432421335]
 position = Vector2(1285, 499)
 rotation = 3.1415927
-scale = Vector2(0.59375, 0.59375)
 texture = ExtResource("2_3453u")
+metadata/_edit_lock_ = true
 
 [node name="ObenLinksSeite40" type="Sprite2D" parent="Boden" unique_id=1192032284]
 position = Vector2(1285, 462)
 rotation = 3.1415927
-scale = Vector2(0.59375, 0.59375)
 texture = ExtResource("2_3453u")
+metadata/_edit_lock_ = true
 
 [node name="ObenLinksSeite41" type="Sprite2D" parent="Boden" unique_id=1093998797]
 position = Vector2(1285, 424)
 rotation = 3.1415927
-scale = Vector2(0.59375, 0.59375)
 texture = ExtResource("2_3453u")
+metadata/_edit_lock_ = true
 
 [node name="ObenLinksSeite42" type="Sprite2D" parent="Boden" unique_id=1537399722]
 position = Vector2(1285, 348)
 rotation = 3.1415927
-scale = Vector2(0.59375, 0.59375)
 texture = ExtResource("2_3453u")
+metadata/_edit_lock_ = true
 
 [node name="ObenLinksSeite43" type="Sprite2D" parent="Boden" unique_id=1796651317]
 position = Vector2(1285, 386)
 rotation = 3.1415927
-scale = Vector2(0.59375, 0.59375)
 texture = ExtResource("2_3453u")
+metadata/_edit_lock_ = true
 
 [node name="ObenLinksSeite44" type="Sprite2D" parent="Boden" unique_id=2021379168]
 position = Vector2(1285, 310)
 rotation = 3.1415927
-scale = Vector2(0.59375, 0.59375)
 texture = ExtResource("2_3453u")
+metadata/_edit_lock_ = true
 
 [node name="ObenLinksSeite45" type="Sprite2D" parent="Boden" unique_id=1933601263]
 position = Vector2(1285, 273)
 rotation = 3.1415927
-scale = Vector2(0.59375, 0.59375)
 texture = ExtResource("2_3453u")
+metadata/_edit_lock_ = true
 
 [node name="ObenLinksSeite46" type="Sprite2D" parent="Boden" unique_id=209224448]
 position = Vector2(1285, 235)
 rotation = 3.1415927
-scale = Vector2(0.59375, 0.59375)
 texture = ExtResource("2_3453u")
+metadata/_edit_lock_ = true
 
 [node name="ObenLinksSeite47" type="Sprite2D" parent="Boden" unique_id=1254535324]
 position = Vector2(1285, 198)
 rotation = 3.1415927
-scale = Vector2(0.59375, 0.59375)
 texture = ExtResource("2_3453u")
+metadata/_edit_lock_ = true
 
 [node name="ObenLinksSeite48" type="Sprite2D" parent="Boden" unique_id=1166271384]
 position = Vector2(1285, 160)
 rotation = 3.1415927
-scale = Vector2(0.59375, 0.59375)
 texture = ExtResource("2_3453u")
+metadata/_edit_lock_ = true
 
 [node name="ObenLinksSeite49" type="Sprite2D" parent="Boden" unique_id=784284598]
 position = Vector2(1285, 84)
 rotation = 3.1415927
-scale = Vector2(0.59375, 0.59375)
 texture = ExtResource("2_3453u")
+metadata/_edit_lock_ = true
 
 [node name="ObenLinksSeite50" type="Sprite2D" parent="Boden" unique_id=1351913781]
 position = Vector2(1285, 122)
 rotation = 3.1415927
-scale = Vector2(0.59375, 0.59375)
 texture = ExtResource("2_3453u")
+metadata/_edit_lock_ = true
 
 [node name="ObenLinksSeite51" type="Sprite2D" parent="Boden" unique_id=1082988086]
 position = Vector2(1285, 46)
 rotation = 3.1415927
-scale = Vector2(0.59375, 0.59375)
 texture = ExtResource("2_3453u")
+metadata/_edit_lock_ = true
 
 [node name="ObenLinksSeite52" type="Sprite2D" parent="Boden" unique_id=630690992]
 position = Vector2(1285, 9)
 rotation = 3.1415927
-scale = Vector2(0.59375, 0.59375)
 texture = ExtResource("2_3453u")
+metadata/_edit_lock_ = true
 
 [node name="ObenLinks" type="Sprite2D" parent="Boden" unique_id=2116497538]
 position = Vector2(-21, -32.5)
-scale = Vector2(0.59375, 0.546875)
 texture = ExtResource("6_46pvi")
+metadata/_edit_lock_ = true
 
 [node name="MitteOben" type="Sprite2D" parent="Boden" unique_id=1136760909]
 position = Vector2(15.5, -32.5)
-scale = Vector2(0.546875, 0.546875)
 texture = ExtResource("7_fvkd4")
+metadata/_edit_lock_ = true
 
 [node name="MitteOben2" type="Sprite2D" parent="Boden" unique_id=553684512]
 position = Vector2(49.75, -32.25)
-scale = Vector2(0.5390634, 0.5390634)
 texture = ExtResource("7_fvkd4")
+metadata/_edit_lock_ = true
 
 [node name="MitteOben3" type="Sprite2D" parent="Boden" unique_id=986954290]
 position = Vector2(84, -32)
-scale = Vector2(0.546875, 0.546875)
 texture = ExtResource("7_fvkd4")
+metadata/_edit_lock_ = true
 
 [node name="MitteOben4" type="Sprite2D" parent="Boden" unique_id=1194462992]
 position = Vector2(118.5, -32.5)
-scale = Vector2(0.546875, 0.546875)
 texture = ExtResource("7_fvkd4")
+metadata/_edit_lock_ = true
 
 [node name="MitteOben5" type="Sprite2D" parent="Boden" unique_id=1311027732]
-position = Vector2(152.75, -32.25006)
-scale = Vector2(0.5390634, 0.5390634)
+position = Vector2(152.875, -32.12503)
+scale = Vector2(0.99609375, 1.0039072)
 texture = ExtResource("7_fvkd4")
+metadata/_edit_lock_ = true
 
 [node name="MitteOben6" type="Sprite2D" parent="Boden" unique_id=1545259858]
 position = Vector2(187, -31)
-scale = Vector2(0.546875, 0.546875)
 texture = ExtResource("7_fvkd4")
+metadata/_edit_lock_ = true
 
 [node name="MitteOben7" type="Sprite2D" parent="Boden" unique_id=1084186047]
 position = Vector2(221.5, -31.5)
-scale = Vector2(0.546875, 0.546875)
 texture = ExtResource("7_fvkd4")
+metadata/_edit_lock_ = true
 
 [node name="MitteOben8" type="Sprite2D" parent="Boden" unique_id=730251333]
 position = Vector2(255.75, -31.25)
-scale = Vector2(0.5390634, 0.5390634)
 texture = ExtResource("7_fvkd4")
+metadata/_edit_lock_ = true
 
 [node name="MitteOben9" type="Sprite2D" parent="Boden" unique_id=928468886]
 position = Vector2(290, -31)
-scale = Vector2(0.546875, 0.546875)
 texture = ExtResource("7_fvkd4")
+metadata/_edit_lock_ = true
 
 [node name="MitteOben10" type="Sprite2D" parent="Boden" unique_id=616600317]
 position = Vector2(324.5, -30.5)
-scale = Vector2(0.546875, 0.546875)
 texture = ExtResource("7_fvkd4")
+metadata/_edit_lock_ = true
 
 [node name="MitteOben11" type="Sprite2D" parent="Boden" unique_id=1189536639]
 position = Vector2(358.75, -31.25)
-scale = Vector2(0.5390634, 0.5390634)
 texture = ExtResource("7_fvkd4")
+metadata/_edit_lock_ = true
 
 [node name="MitteOben12" type="Sprite2D" parent="Boden" unique_id=1237403868]
 position = Vector2(393, -31)
-scale = Vector2(0.546875, 0.546875)
 texture = ExtResource("7_fvkd4")
+metadata/_edit_lock_ = true
 
 [node name="MitteOben13" type="Sprite2D" parent="Boden" unique_id=1210963792]
 position = Vector2(427.5, -31)
-scale = Vector2(0.546875, 0.546875)
 texture = ExtResource("7_fvkd4")
+metadata/_edit_lock_ = true
 
 [node name="MitteOben14" type="Sprite2D" parent="Boden" unique_id=121694287]
 position = Vector2(461.75, -30.75)
-scale = Vector2(0.5390634, 0.5390634)
 texture = ExtResource("7_fvkd4")
+metadata/_edit_lock_ = true
 
 [node name="MitteOben15" type="Sprite2D" parent="Boden" unique_id=935952455]
 position = Vector2(496, -30.5)
-scale = Vector2(0.546875, 0.546875)
 texture = ExtResource("7_fvkd4")
+metadata/_edit_lock_ = true
 
 [node name="MitteOben25" type="Sprite2D" parent="Boden" unique_id=1271235952]
 position = Vector2(839.5, -29.5)
-scale = Vector2(0.546875, 0.546875)
 texture = ExtResource("7_fvkd4")
+metadata/_edit_lock_ = true
 
 [node name="MitteOben26" type="Sprite2D" parent="Boden" unique_id=1003370973]
 position = Vector2(873.75, -29.25)
-scale = Vector2(0.5390634, 0.5390634)
 texture = ExtResource("7_fvkd4")
+metadata/_edit_lock_ = true
 
 [node name="MitteOben27" type="Sprite2D" parent="Boden" unique_id=607588003]
 position = Vector2(908, -29)
-scale = Vector2(0.546875, 0.546875)
 texture = ExtResource("7_fvkd4")
+metadata/_edit_lock_ = true
 
 [node name="MitteOben28" type="Sprite2D" parent="Boden" unique_id=1034719972]
 position = Vector2(942.5, -29.5)
-scale = Vector2(0.546875, 0.546875)
 texture = ExtResource("7_fvkd4")
+metadata/_edit_lock_ = true
 
 [node name="MitteOben29" type="Sprite2D" parent="Boden" unique_id=912015901]
 position = Vector2(976.75, -29.250061)
-scale = Vector2(0.5390634, 0.5390634)
 texture = ExtResource("7_fvkd4")
+metadata/_edit_lock_ = true
 
 [node name="MitteOben30" type="Sprite2D" parent="Boden" unique_id=1968271692]
 position = Vector2(1011, -28)
-scale = Vector2(0.546875, 0.546875)
 texture = ExtResource("7_fvkd4")
+metadata/_edit_lock_ = true
 
 [node name="MitteOben31" type="Sprite2D" parent="Boden" unique_id=2142678849]
 position = Vector2(1045.5, -28.5)
-scale = Vector2(0.546875, 0.546875)
 texture = ExtResource("7_fvkd4")
+metadata/_edit_lock_ = true
 
 [node name="MitteOben32" type="Sprite2D" parent="Boden" unique_id=727916387]
 position = Vector2(1079.75, -28.25)
-scale = Vector2(0.5390634, 0.5390634)
 texture = ExtResource("7_fvkd4")
+metadata/_edit_lock_ = true
 
 [node name="MitteOben33" type="Sprite2D" parent="Boden" unique_id=1027830656]
 position = Vector2(1114, -28)
-scale = Vector2(0.546875, 0.546875)
 texture = ExtResource("7_fvkd4")
+metadata/_edit_lock_ = true
 
 [node name="MitteOben34" type="Sprite2D" parent="Boden" unique_id=1498390206]
 position = Vector2(1148.5, -27.5)
-scale = Vector2(0.546875, 0.546875)
 texture = ExtResource("7_fvkd4")
+metadata/_edit_lock_ = true
 
 [node name="MitteOben35" type="Sprite2D" parent="Boden" unique_id=745274582]
 position = Vector2(1182.75, -28.25)
-scale = Vector2(0.5390634, 0.5390634)
 texture = ExtResource("7_fvkd4")
+metadata/_edit_lock_ = true
 
 [node name="MitteOben36" type="Sprite2D" parent="Boden" unique_id=1476877870]
 position = Vector2(1217, -28)
-scale = Vector2(0.546875, 0.546875)
 texture = ExtResource("7_fvkd4")
+metadata/_edit_lock_ = true
 
 [node name="MitteOben37" type="Sprite2D" parent="Boden" unique_id=2091399469]
 position = Vector2(1251.5, -28)
-scale = Vector2(0.546875, 0.546875)
 texture = ExtResource("7_fvkd4")
+metadata/_edit_lock_ = true
 
 [node name="MitteOben16" type="Sprite2D" parent="Boden" unique_id=1017342402]
 position = Vector2(530.5, -30)
-scale = Vector2(0.546875, 0.546875)
 texture = ExtResource("7_fvkd4")
+metadata/_edit_lock_ = true
 
 [node name="MitteOben17" type="Sprite2D" parent="Boden" unique_id=585574934]
 position = Vector2(564.75, -29.75)
-scale = Vector2(0.5390634, 0.5390634)
 texture = ExtResource("7_fvkd4")
+metadata/_edit_lock_ = true
 
 [node name="MitteOben18" type="Sprite2D" parent="Boden" unique_id=1520204052]
 position = Vector2(599, -29.5)
-scale = Vector2(0.546875, 0.546875)
 texture = ExtResource("7_fvkd4")
+metadata/_edit_lock_ = true
 
 [node name="MitteOben19" type="Sprite2D" parent="Boden" unique_id=1212964723]
 position = Vector2(633.5, -30)
-scale = Vector2(0.546875, 0.546875)
 texture = ExtResource("7_fvkd4")
+metadata/_edit_lock_ = true
 
 [node name="MitteOben20" type="Sprite2D" parent="Boden" unique_id=172516886]
 position = Vector2(667.75, -29.75)
-scale = Vector2(0.5390634, 0.5390634)
 texture = ExtResource("7_fvkd4")
+metadata/_edit_lock_ = true
 
 [node name="MitteOben21" type="Sprite2D" parent="Boden" unique_id=1045067071]
 position = Vector2(702, -29.5)
-scale = Vector2(0.546875, 0.546875)
 texture = ExtResource("7_fvkd4")
+metadata/_edit_lock_ = true
 
 [node name="MitteOben22" type="Sprite2D" parent="Boden" unique_id=379131827]
 position = Vector2(736.5, -29)
-scale = Vector2(0.546875, 0.546875)
 texture = ExtResource("7_fvkd4")
+metadata/_edit_lock_ = true
 
 [node name="MitteOben23" type="Sprite2D" parent="Boden" unique_id=1804259820]
 position = Vector2(770.75, -29.75)
-scale = Vector2(0.5390634, 0.5390634)
 texture = ExtResource("7_fvkd4")
+metadata/_edit_lock_ = true
 
 [node name="MitteOben24" type="Sprite2D" parent="Boden" unique_id=1581788147]
 position = Vector2(805, -29.5)
-scale = Vector2(0.546875, 0.546875)
 texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben38" type="Sprite2D" parent="Boden" unique_id=2135004031]
-position = Vector2(46.25, 985.75)
-rotation = -3.1415925
-scale = Vector2(0.5390634, 0.5390634)
-texture = ExtResource("7_fvkd4")
+metadata/_edit_lock_ = true
 
 [node name="MitteOben74" type="Sprite2D" parent="Boden" unique_id=1793384962]
-position = Vector2(15, 986)
+position = Vector2(15, 994)
 rotation = -3.1415925
-scale = Vector2(0.5390634, 0.5390634)
 texture = ExtResource("7_fvkd4")
+metadata/_edit_lock_ = true
 
 [node name="MitteOben39" type="Sprite2D" parent="Boden" unique_id=1699706312]
-position = Vector2(80.5, 986)
+position = Vector2(78.5, 994)
 rotation = -3.1415925
-scale = Vector2(0.546875, 0.546875)
 texture = ExtResource("7_fvkd4")
+metadata/_edit_lock_ = true
 
 [node name="MitteOben40" type="Sprite2D" parent="Boden" unique_id=1164515025]
-position = Vector2(115, 985.5)
+position = Vector2(141, 994.5)
 rotation = -3.1415925
-scale = Vector2(0.546875, 0.546875)
 texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben41" type="Sprite2D" parent="Boden" unique_id=1033690849]
-position = Vector2(149.25, 985.74994)
-rotation = -3.1415925
-scale = Vector2(0.5390634, 0.5390634)
-texture = ExtResource("7_fvkd4")
+metadata/_edit_lock_ = true
 
 [node name="MitteOben42" type="Sprite2D" parent="Boden" unique_id=1801049457]
-position = Vector2(183.5, 987)
+position = Vector2(204.5, 994)
 rotation = -3.1415925
-scale = Vector2(0.546875, 0.546875)
 texture = ExtResource("7_fvkd4")
+metadata/_edit_lock_ = true
 
 [node name="MitteOben43" type="Sprite2D" parent="Boden" unique_id=2064776397]
-position = Vector2(218, 986.5)
+position = Vector2(268, 993.5)
 rotation = -3.1415925
-scale = Vector2(0.546875, 0.546875)
 texture = ExtResource("7_fvkd4")
+metadata/_edit_lock_ = true
 
 [node name="MitteOben44" type="Sprite2D" parent="Boden" unique_id=590048049]
-position = Vector2(252.25, 986.75)
+position = Vector2(331.25, 992.75)
 rotation = -3.1415925
-scale = Vector2(0.5390634, 0.5390634)
 texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben45" type="Sprite2D" parent="Boden" unique_id=2137797806]
-position = Vector2(286.5, 987)
-rotation = -3.1415925
-scale = Vector2(0.546875, 0.546875)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben46" type="Sprite2D" parent="Boden" unique_id=901511878]
-position = Vector2(321, 987.5)
-rotation = -3.1415925
-scale = Vector2(0.546875, 0.546875)
-texture = ExtResource("7_fvkd4")
+metadata/_edit_lock_ = true
 
 [node name="MitteOben47" type="Sprite2D" parent="Boden" unique_id=660647362]
-position = Vector2(355.25, 986.75)
+position = Vector2(394.25, 993.75)
 rotation = -3.1415925
-scale = Vector2(0.5390634, 0.5390634)
 texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben48" type="Sprite2D" parent="Boden" unique_id=1848988651]
-position = Vector2(389.5, 987)
-rotation = -3.1415925
-scale = Vector2(0.546875, 0.546875)
-texture = ExtResource("7_fvkd4")
+metadata/_edit_lock_ = true
 
 [node name="MitteOben49" type="Sprite2D" parent="Boden" unique_id=544567544]
-position = Vector2(424, 987)
+position = Vector2(458, 993)
 rotation = -3.1415925
-scale = Vector2(0.546875, 0.546875)
 texture = ExtResource("7_fvkd4")
+metadata/_edit_lock_ = true
 
 [node name="MitteOben50" type="Sprite2D" parent="Boden" unique_id=321421045]
-position = Vector2(458.25, 987.25)
+position = Vector2(521.25, 993.25)
 rotation = -3.1415925
-scale = Vector2(0.5390634, 0.5390634)
 texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben51" type="Sprite2D" parent="Boden" unique_id=1529087266]
-position = Vector2(492.5, 987.5)
-rotation = -3.1415925
-scale = Vector2(0.546875, 0.546875)
-texture = ExtResource("7_fvkd4")
+metadata/_edit_lock_ = true
 
 [node name="MitteOben52" type="Sprite2D" parent="Boden" unique_id=1820278540]
-position = Vector2(836, 988.5)
+position = Vector2(876, 994.5)
 rotation = -3.1415925
-scale = Vector2(0.546875, 0.546875)
 texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben53" type="Sprite2D" parent="Boden" unique_id=2069211208]
-position = Vector2(870.25, 988.75)
-rotation = -3.1415925
-scale = Vector2(0.5390634, 0.5390634)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben54" type="Sprite2D" parent="Boden" unique_id=1487542250]
-position = Vector2(904.5, 989)
-rotation = -3.1415925
-scale = Vector2(0.546875, 0.546875)
-texture = ExtResource("7_fvkd4")
+metadata/_edit_lock_ = true
 
 [node name="MitteOben55" type="Sprite2D" parent="Boden" unique_id=582402638]
-position = Vector2(939, 988.5)
+position = Vector2(939, 993.5)
 rotation = -3.1415925
-scale = Vector2(0.546875, 0.546875)
 texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben56" type="Sprite2D" parent="Boden" unique_id=1095967868]
-position = Vector2(973.25, 988.74994)
-rotation = -3.1415925
-scale = Vector2(0.5390634, 0.5390634)
-texture = ExtResource("7_fvkd4")
+metadata/_edit_lock_ = true
 
 [node name="MitteOben57" type="Sprite2D" parent="Boden" unique_id=808438013]
-position = Vector2(1007.5, 990)
+position = Vector2(1002.5, 994)
 rotation = -3.1415925
-scale = Vector2(0.546875, 0.546875)
 texture = ExtResource("7_fvkd4")
+metadata/_edit_lock_ = true
 
 [node name="MitteOben58" type="Sprite2D" parent="Boden" unique_id=2114778781]
-position = Vector2(1042, 989.5)
+position = Vector2(1064, 994.5)
 rotation = -3.1415925
-scale = Vector2(0.546875, 0.546875)
 texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben59" type="Sprite2D" parent="Boden" unique_id=582848950]
-position = Vector2(1076.25, 989.75)
-rotation = -3.1415925
-scale = Vector2(0.5390634, 0.5390634)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben60" type="Sprite2D" parent="Boden" unique_id=2073514924]
-position = Vector2(1110.5, 990)
-rotation = -3.1415925
-scale = Vector2(0.546875, 0.546875)
-texture = ExtResource("7_fvkd4")
+metadata/_edit_lock_ = true
 
 [node name="MitteOben61" type="Sprite2D" parent="Boden" unique_id=151535057]
-position = Vector2(1145, 990.5)
+position = Vector2(1127, 993.5)
 rotation = -3.1415925
-scale = Vector2(0.546875, 0.546875)
 texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben62" type="Sprite2D" parent="Boden" unique_id=1643777141]
-position = Vector2(1179.25, 989.75)
-rotation = -3.1415925
-scale = Vector2(0.5390634, 0.5390634)
-texture = ExtResource("7_fvkd4")
+metadata/_edit_lock_ = true
 
 [node name="MitteOben63" type="Sprite2D" parent="Boden" unique_id=672886774]
-position = Vector2(1213.5, 990)
+position = Vector2(1189.5, 994)
 rotation = -3.1415925
-scale = Vector2(0.546875, 0.546875)
 texture = ExtResource("7_fvkd4")
+metadata/_edit_lock_ = true
 
 [node name="MitteOben64" type="Sprite2D" parent="Boden" unique_id=1542623483]
-position = Vector2(1248, 990)
+position = Vector2(1252, 994)
 rotation = -3.1415925
-scale = Vector2(0.546875, 0.546875)
 texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben65" type="Sprite2D" parent="Boden" unique_id=864833214]
-position = Vector2(527, 988)
-rotation = -3.1415925
-scale = Vector2(0.546875, 0.546875)
-texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben66" type="Sprite2D" parent="Boden" unique_id=2007222801]
-position = Vector2(561.25, 988.25)
-rotation = -3.1415925
-scale = Vector2(0.5390634, 0.5390634)
-texture = ExtResource("7_fvkd4")
+metadata/_edit_lock_ = true
 
 [node name="MitteOben67" type="Sprite2D" parent="Boden" unique_id=1411045253]
-position = Vector2(595.5, 988.5)
+position = Vector2(584.5, 993.5)
 rotation = -3.1415925
-scale = Vector2(0.546875, 0.546875)
 texture = ExtResource("7_fvkd4")
+metadata/_edit_lock_ = true
 
 [node name="MitteOben68" type="Sprite2D" parent="Boden" unique_id=2044745933]
-position = Vector2(630, 988)
+position = Vector2(630, 994)
 rotation = -3.1415925
-scale = Vector2(0.546875, 0.546875)
 texture = ExtResource("7_fvkd4")
+metadata/_edit_lock_ = true
 
 [node name="MitteOben69" type="Sprite2D" parent="Boden" unique_id=1416078166]
-position = Vector2(664.25, 988.25)
+position = Vector2(693.25, 994.25)
 rotation = -3.1415925
-scale = Vector2(0.5390634, 0.5390634)
 texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben70" type="Sprite2D" parent="Boden" unique_id=2078211696]
-position = Vector2(698.5, 988.5)
-rotation = -3.1415925
-scale = Vector2(0.546875, 0.546875)
-texture = ExtResource("7_fvkd4")
+metadata/_edit_lock_ = true
 
 [node name="MitteOben71" type="Sprite2D" parent="Boden" unique_id=1520574853]
-position = Vector2(733, 989)
+position = Vector2(756, 994)
 rotation = -3.1415925
-scale = Vector2(0.546875, 0.546875)
 texture = ExtResource("7_fvkd4")
+metadata/_edit_lock_ = true
 
 [node name="MitteOben72" type="Sprite2D" parent="Boden" unique_id=1923671391]
-position = Vector2(767.25, 988.25)
+position = Vector2(812.25, 994.25)
 rotation = -3.1415925
-scale = Vector2(0.5390634, 0.5390634)
 texture = ExtResource("7_fvkd4")
-
-[node name="MitteOben73" type="Sprite2D" parent="Boden" unique_id=44074789]
-position = Vector2(801.5, 988.5)
-rotation = -3.1415925
-scale = Vector2(0.546875, 0.546875)
-texture = ExtResource("7_fvkd4")
+metadata/_edit_lock_ = true
 
 [node name="ObenRechts" type="Sprite2D" parent="Boden" unique_id=1531639546]
 position = Vector2(1286.5, -27.5)
-scale = Vector2(0.5468745, 0.5468745)
 texture = ExtResource("8_pj4lr")
+metadata/_edit_lock_ = true
 
 [node name="UntenRechts" type="Sprite2D" parent="Boden" unique_id=1382598724]
 position = Vector2(1284.75, 989.25)
-scale = Vector2(0.5859386, 0.5859386)
 texture = ExtResource("9_00xh1")
+metadata/_edit_lock_ = true
 
 [node name="Ludwig" type="CharacterBody2D" parent="." unique_id=2049528384]
 script = ExtResource("1_8mrap")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Ludwig" unique_id=1186011735]
-shape = SubResource("CircleShape2D_g4v7s")
+position = Vector2(0, -13)
+shape = SubResource("CapsuleShape2D_j286a")
 
-[node name="ColorRect" type="ColorRect" parent="Ludwig" unique_id=1961133579]
-offset_left = -20.0
-offset_top = -20.0
-offset_right = 20.0
-offset_bottom = 20.0
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Ludwig" unique_id=2056276908]
+position = Vector2(4, -14)
+scale = Vector2(0.04119873, 0.042043038)
+sprite_frames = SubResource("SpriteFrames_g4v7s")
+animation = &"walk_down"
+frame_progress = 0.4481377
 
 [node name="Camera2D" type="Camera2D" parent="Ludwig" unique_id=130024876]
 zoom = Vector2(2, 2)
@@ -850,27 +1310,81 @@ offset_top = 61.0
 offset_right = 688.0
 offset_bottom = 286.0
 
-[node name="Fenster" type="Sprite2D" parent="ui" unique_id=533585069]
-position = Vector2(947, 496)
+[node name="Panel" type="Panel" parent="ui" unique_id=304419238]
+offset_left = 537.0
+offset_top = 323.0
+offset_right = 1395.0
+offset_bottom = 760.0
+script = ExtResource("12_0xt02")
+
+[node name="Fenster" type="Sprite2D" parent="ui/Panel" unique_id=533585069]
+position = Vector2(427.00006, 219)
 scale = Vector2(0.56999993, 0.39333332)
 texture = ExtResource("10_00xh1")
 
-[node name="MmePompadour" type="Sprite2D" parent="ui/Fenster" unique_id=726980296]
+[node name="MmePompadour" type="Sprite2D" parent="ui/Panel/Fenster" unique_id=726980296]
 position = Vector2(396.49146, 27.966309)
 scale = Vector2(1.1871346, 1.7669492)
 texture = ExtResource("11_8tfmj")
 
-[node name="LudwigXiv" type="Sprite2D" parent="ui/Fenster" unique_id=197197111]
+[node name="LudwigXiv" type="Sprite2D" parent="ui/Panel/Fenster" unique_id=197197111]
 position = Vector2(70.17554, 53.389893)
 scale = Vector2(1.0701755, 1.5635594)
 texture = ExtResource("12_jw1dd")
 
-[node name="LudwigXv" type="Sprite2D" parent="ui/Fenster" unique_id=693694717]
+[node name="LudwigXv" type="Sprite2D" parent="ui/Panel/Fenster" unique_id=693694717]
 position = Vector2(-264.91223, -15.254028)
 scale = Vector2(1.1549709, 1.7203391)
 texture = ExtResource("13_0xt02")
 
-[node name="MmeMaintenon" type="Sprite2D" parent="ui/Fenster" unique_id=1761615285]
+[node name="MmeMaintenon" type="Sprite2D" parent="ui/Panel/Fenster" unique_id=1761615285]
 position = Vector2(-577.193, 5.084717)
 scale = Vector2(1.2134503, 1.6228814)
 texture = ExtResource("14_q0xi3")
+
+[node name="Node2D" type="Node2D" parent="." unique_id=1836092436]
+
+[node name="MmeMaintenon" type="Sprite2D" parent="Node2D" unique_id=1355959400]
+position = Vector2(-472, -591.00006)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("14_q0xi3")
+
+[node name="MmeMaintenonFalsch" type="Sprite2D" parent="Node2D" unique_id=326055619]
+position = Vector2(-235.00003, -590.99994)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("46_hg0l0")
+
+[node name="MmePompadour" type="Sprite2D" parent="Node2D" unique_id=866908823]
+position = Vector2(-485, -401.99997)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("11_8tfmj")
+
+[node name="MmePompadourFalsch" type="Sprite2D" parent="Node2D" unique_id=1917641834]
+position = Vector2(-248.00003, -407)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("47_q3blq")
+
+[node name="LudwigXiv" type="Sprite2D" parent="Node2D" unique_id=1283171917]
+position = Vector2(-474, -264)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("12_jw1dd")
+
+[node name="LudwigXivFalsch" type="Sprite2D" parent="Node2D" unique_id=1754587623]
+position = Vector2(-243.00002, -269)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("48_16k7p")
+
+[node name="LudwigXv" type="Sprite2D" parent="Node2D" unique_id=733034088]
+position = Vector2(-473.00003, -147)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("13_0xt02")
+
+[node name="LudwigXvFalsch" type="Sprite2D" parent="Node2D" unique_id=1742617740]
+position = Vector2(-236, -153)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("49_kkqk6")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1736226478]
+stream = ExtResource("50_q3blq")
+volume_db = -30.0
+autoplay = true
